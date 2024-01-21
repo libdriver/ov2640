@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['ov2640_5fagc_5fgain_5ft_802',['ov2640_agc_gain_t',['../group__ov2640__sensor__driver.html#ga2eb6c14620431c886424a2b55a526764',1,'driver_ov2640.h']]],
+  ['ov2640_5fband_5ft_803',['ov2640_band_t',['../group__ov2640__sensor__driver.html#gabfb781209eac7443ebcad9dbad68123b',1,'driver_ov2640.h']]],
+  ['ov2640_5fbist_5ft_804',['ov2640_bist_t',['../group__ov2640__dsp__driver.html#ga8b516b09837975efc701cbe77a5d6183',1,'driver_ov2640.h']]],
+  ['ov2640_5fbool_5ft_805',['ov2640_bool_t',['../group__ov2640__sensor__driver.html#ga838ee013c6ecbb218a336f235b66af61',1,'driver_ov2640.h']]],
+  ['ov2640_5fbrightness_5ft_806',['ov2640_brightness_t',['../group__ov2640__function__driver.html#ga46880c8a7ebc0e0acc6d2d3d1213d575',1,'driver_ov2640.h']]],
+  ['ov2640_5fbyte_5fswap_5ft_807',['ov2640_byte_swap_t',['../group__ov2640__dsp__driver.html#ga84414839f206ee502d905619cc1ffdd3',1,'driver_ov2640.h']]],
+  ['ov2640_5fcolor_5fsaturation_5ft_808',['ov2640_color_saturation_t',['../group__ov2640__function__driver.html#ga5098b0d6dec6f3ac0ebe6b96e0d22c87',1,'driver_ov2640.h']]],
+  ['ov2640_5fcontrast_5ft_809',['ov2640_contrast_t',['../group__ov2640__function__driver.html#ga439f59caa66e7da71f74d7cb7eecf7be',1,'driver_ov2640.h']]],
+  ['ov2640_5fcontrol_5ft_810',['ov2640_control_t',['../group__ov2640__sensor__driver.html#ga615dd729eab11ee2a353171ab98ebac5',1,'driver_ov2640.h']]],
+  ['ov2640_5fdummy_5fframe_5ft_811',['ov2640_dummy_frame_t',['../group__ov2640__sensor__driver.html#gaf2f16f8c4a22bd91946b15f097b71e6f',1,'driver_ov2640.h']]],
+  ['ov2640_5fdvp_5foutput_5fformat_5ft_812',['ov2640_dvp_output_format_t',['../group__ov2640__dsp__driver.html#ga1453d3b404bccd76de74a74e06bef9ae',1,'driver_ov2640.h']]],
+  ['ov2640_5fedge_5ft_813',['ov2640_edge_t',['../group__ov2640__sensor__driver.html#ga0c54b9ac675fc56e6a52b86bb1a179ab',1,'driver_ov2640.h']]],
+  ['ov2640_5fhref_5ftiming_5ft_814',['ov2640_href_timing_t',['../group__ov2640__dsp__driver.html#gab4365f40536547382b581d074ced468d',1,'driver_ov2640.h']]],
+  ['ov2640_5flight_5fmode_5ft_815',['ov2640_light_mode_t',['../group__ov2640__function__driver.html#gace364d6029a2239fa5d9a8a80f0a7b6c',1,'driver_ov2640.h']]],
+  ['ov2640_5fmode_5ft_816',['ov2640_mode_t',['../group__ov2640__sensor__driver.html#ga8f08a206b029466d14074aca897a80aa',1,'driver_ov2640.h']]],
+  ['ov2640_5foutput_5fdrive_5ft_817',['ov2640_output_drive_t',['../group__ov2640__sensor__driver.html#ga865b64a17f1eec9f5d0f70b57f710720',1,'driver_ov2640.h']]],
+  ['ov2640_5fpclk_5ft_818',['ov2640_pclk_t',['../group__ov2640__sensor__driver.html#gaeae2430ee5f7ad58cbb535714d55bf7c',1,'driver_ov2640.h']]],
+  ['ov2640_5fpin_5fstatus_5ft_819',['ov2640_pin_status_t',['../group__ov2640__sensor__driver.html#ga4a992ffb2ed9548a06f1acb93d4b5432',1,'driver_ov2640.h']]],
+  ['ov2640_5fpolarity_5ft_820',['ov2640_polarity_t',['../group__ov2640__sensor__driver.html#gab7a6d08b13e250cd78bfcfaff921e6f9',1,'driver_ov2640.h']]],
+  ['ov2640_5freset_5ft_821',['ov2640_reset_t',['../group__ov2640__dsp__driver.html#gaa31052b40a0315c5f6c8d64251b1e1b9',1,'driver_ov2640.h']]],
+  ['ov2640_5fresolution_5ft_822',['ov2640_resolution_t',['../group__ov2640__sensor__driver.html#ga2947b964792117ac51e4c0ca7bf30f15',1,'driver_ov2640.h']]],
+  ['ov2640_5fspecial_5feffect_5ft_823',['ov2640_special_effect_t',['../group__ov2640__function__driver.html#ga243656ee707b0943ea373084af9dd5ab',1,'driver_ov2640.h']]]
+];

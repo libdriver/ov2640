@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['debug_5fprint_2',['debug_print',['../structov2640__handle__s.html#a769d5b3a6c14790a0e126e8fe70b384b',1,'ov2640_handle_s']]],
+  ['delay_5fms_3',['delay_ms',['../structov2640__handle__s.html#a406c9433252b7366de417b7a60915c81',1,'ov2640_handle_s']]],
+  ['driver_5fov2640_2ec_4',['driver_ov2640.c',['../driver__ov2640_8c.html',1,'']]],
+  ['driver_5fov2640_2eh_5',['driver_ov2640.h',['../driver__ov2640_8h.html',1,'']]],
+  ['driver_5fov2640_5finterface_2eh_6',['driver_ov2640_interface.h',['../driver__ov2640__interface_8h.html',1,'']]],
+  ['driver_5fov2640_5finterface_5ftemplate_2ec_7',['driver_ov2640_interface_template.c',['../driver__ov2640__interface__template_8c.html',1,'']]],
+  ['driver_5fov2640_5flink_5fdebug_5fprint_8',['DRIVER_OV2640_LINK_DEBUG_PRINT',['../group__ov2640__link__driver.html#gaeed2654770f4df09290229fcee5556bd',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5fdelay_5fms_9',['DRIVER_OV2640_LINK_DELAY_MS',['../group__ov2640__link__driver.html#ga60208ce74c12db4c57482191a8b46472',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5finit_10',['DRIVER_OV2640_LINK_INIT',['../group__ov2640__link__driver.html#ga172ed9c7dc7dceb7bac053357aa0114c',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5fpower_5fdown_5fdeinit_11',['DRIVER_OV2640_LINK_POWER_DOWN_DEINIT',['../group__ov2640__link__driver.html#ga2c41f51e313b5d22e4fff1454bef8688',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5fpower_5fdown_5finit_12',['DRIVER_OV2640_LINK_POWER_DOWN_INIT',['../group__ov2640__link__driver.html#ga0d8df03740282e00ac52ec64cfb8d14b',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5fpower_5fdown_5fwrite_13',['DRIVER_OV2640_LINK_POWER_DOWN_WRITE',['../group__ov2640__link__driver.html#ga0e984005b16d6a6142c598ccd4511718',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5freset_5fdeinit_14',['DRIVER_OV2640_LINK_RESET_DEINIT',['../group__ov2640__link__driver.html#gae72f78501f662f1ac43e5d0fc5e79eb9',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5freset_5finit_15',['DRIVER_OV2640_LINK_RESET_INIT',['../group__ov2640__link__driver.html#gae9c11a30dc68b19889d7843db8ef5bb3',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5freset_5fwrite_16',['DRIVER_OV2640_LINK_RESET_WRITE',['../group__ov2640__link__driver.html#ga8ee9ec5bd6efcc2da4280fe6d56697e0',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5fsccb_5fdeinit_17',['DRIVER_OV2640_LINK_SCCB_DEINIT',['../group__ov2640__link__driver.html#gaa785216317e40035db6fb1603dafdbc7',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5fsccb_5finit_18',['DRIVER_OV2640_LINK_SCCB_INIT',['../group__ov2640__link__driver.html#ga24773aa6cac56b723719b5c7515fd7cb',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5fsccb_5fread_19',['DRIVER_OV2640_LINK_SCCB_READ',['../group__ov2640__link__driver.html#ga6780d0a7b1d0dee9b784b26d5c6c34c2',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5flink_5fsccb_5fwrite_20',['DRIVER_OV2640_LINK_SCCB_WRITE',['../group__ov2640__link__driver.html#ga7578384b1e19f61e230bd34beed72563',1,'driver_ov2640.h']]],
+  ['driver_5fov2640_5fregister_5ftest_2ec_21',['driver_ov2640_register_test.c',['../driver__ov2640__register__test_8c.html',1,'']]],
+  ['driver_5fov2640_5fregister_5ftest_2eh_22',['driver_ov2640_register_test.h',['../driver__ov2640__register__test_8h.html',1,'']]],
+  ['driver_5fversion_23',['driver_version',['../structov2640__info__s.html#a41b0bd442708b70d252c50b92c75265a',1,'ov2640_info_s']]],
+  ['driver_5fversion_24',['DRIVER_VERSION',['../driver__ov2640_8c.html#ae578001fe043b4cca7a0edd801cfe9c4',1,'driver_ov2640.c']]]
+];
