@@ -9,6 +9,7 @@
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/ov2640/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
 OV2640摄像机™ 图像传感器是一种低电压CMOS器件，在小封装中提供单芯片UXGA（1632x1232）相机和图像处理器的全部功能。OV2640通过串行摄像头控制总线（SCCB）接口控制，提供各种格式的全帧、亚采样、缩放或窗口化的8位/10位图像。
+
 该产品的图像阵列能够以UXGA分辨率以每秒15帧（fps）的速度运行，用户可以完全控制图像质量、格式和输出数据传输。所有所需的图像处理功能，包括曝光控制、伽玛、白平衡、颜色饱和度、色调控制、白色像素消除、噪声消除等，也可以通过SCCB接口进行编程。OV2640还包括用于提高处理能力的压缩引擎。此外，OmniVision CAMERACHIP传感器使用专有的传感器技术，通过减少或消除常见的图像污染光源/电源，如固定图案噪声、涂抹等，来提高图像质量，从而产生干净、完全稳定的彩色图像。
 
 LibDriver OV2640是LibDriver推出的OV2640全功能驱动，该驱动提供图像显示，图像拍照，特殊效果设置等功能并且它符合MISRA标准。

@@ -9,6 +9,7 @@
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/ov2640/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
 OV2640攝像機 ™  圖像感測器是一種低電壓CMOS器件，在小封裝中提供單晶片UXGA（1632x1232）相機和影像處理器的全部功能。 OV2640通過串列監視器控制匯流排（SCCB）介面控制，提供各種格式的全幀、亞採樣、縮放或視窗化的8比特/10比特影像。
+
 該產品的影像陣列能够以UXGA分辯率以每秒15幀（fps）的速度運行，用戶可以完全控制圖像品質、格式和輸出資料傳輸。 所有所需的圖像處理功能，包括曝光控制、伽瑪、白平衡、顏色飽和度、色調控制、白色點數消除、雜訊消除等，也可以通過SCCB介面進行程式設計。 OV2640還包括用於提高處理能力的壓縮引擎。 此外，OmniVision CAMERACHIP感測器使用專有的感測器科技，通過减少或消除常見的影像污染光源/電源，如固定圖案雜訊、塗抹等，來提高圖像品質，從而產生乾淨、完全穩定的彩色影像。
 
 LibDriver OV2640是LibDriver推出的OV2640全功能驅動，該驅動提供影像顯示，影像拍照，特殊效果設定等功能並且它符合MISRA標準。
