@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver OV2640
- * @brief     libdriver ov2640 is a full function driver of ov2640 and it can run in both MCU and Linux platform.
+ * @brief     LibDriver OV2640 is a full function driver of OV2640 and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
