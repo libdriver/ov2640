@@ -48,60 +48,13 @@ LibDriver OV2640 is a full function driver of OV2640 launched by LibDriver.It pr
 
 Reference /interface SCCB, DVP platform independent template and finish your platform SCCB, DVP driver.
 
-Add /src, /interface and /example to your project.
+Add the /src directory, the interface driver for your platform, and your own drivers to your project, if you want to use the default example drivers, add the /example directory to your project.
 
 ### Usage
 
 You can refer to the examples in the /example directory to complete your own driver. If you want to use the default programming examples, here's how to use them.
 
 #### example display
-
-```C
-#include "driver_ov2640_basic.h"
-
-uint8_t res;
-
-/* basic init */
-res = ov2640_basic_init();
-if (res != 0)
-{
-    return 1;
-}
-
-/* set to jpeg mode */
-res = ov2640_basic_set_jpeg_mode();
-if (res != 0)
-{
-    (void)ov2640_basic_deinit();
-
-    return 1;
-}
-
-/* set image resolution */
-res = ov2640_basic_set_image_resolution(OV2640_IMAGE_RESOLUTION_QQVGA);
-if (res != 0)
-{
-    (void)ov2640_basic_deinit();
-
-    return 1;
-}
-
-/* delay 500ms */
-ov2640_interface_delay_ms(500);
-
-...
-
-/* finish your jpeg captrue progress */    
-
-...
-
-/* ov2640 deinit */
-(void)ov2640_basic_deinit();
-
-return 0;
-```
-
-#### example photo
 
 ```C
 #include "driver_ov2640_basic.h"
@@ -139,6 +92,53 @@ ov2640_interface_delay_ms(500);
 ...
 
 /* finish your display progress */    
+
+...
+
+/* ov2640 deinit */
+(void)ov2640_basic_deinit();
+
+return 0;
+```
+
+#### example photo
+
+```C
+#include "driver_ov2640_basic.h"
+
+uint8_t res;
+
+/* basic init */
+res = ov2640_basic_init();
+if (res != 0)
+{
+    return 1;
+}
+
+/* set to jpeg mode */
+res = ov2640_basic_set_jpeg_mode();
+if (res != 0)
+{
+    (void)ov2640_basic_deinit();
+
+    return 1;
+}
+
+/* set image resolution */
+res = ov2640_basic_set_image_resolution(OV2640_IMAGE_RESOLUTION_QQVGA);
+if (res != 0)
+{
+    (void)ov2640_basic_deinit();
+
+    return 1;
+}
+
+/* delay 500ms */
+ov2640_interface_delay_ms(500);
+
+...
+
+/* finish your jpeg captrue progress */    
 
 ...
 
