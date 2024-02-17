@@ -48,60 +48,13 @@ LibDriver OV2640은 LibDriver에서 출시한 OV2640의 전체 기능 드라이�
 
 /interface 디렉토리에서 플랫폼 독립적인 SCCB, DVP버스 템플릿을 참조하여 지정된 플랫폼에 대한 SCCB, DVP버스 드라이버를 완성하십시오.
 
-/src 디렉토리, /interface 디렉토리 및 /example 디렉토리를 프로젝트에 추가하십시오.
+/src 디렉터리, 플랫폼용 인터페이스 드라이버 및 자체 드라이버를 프로젝트에 추가합니다. 기본 예제 드라이버를 사용하려면 /example 디렉터리를 프로젝트에 추가합니다.
 
 ### 사용
 
 /example 디렉터리의 예제를 참조하여 자신만의 드라이버를 완성할 수 있습니다. 기본 프로그래밍 예제를 사용하려는 경우 사용 방법은 다음과 같습니다.
 
 #### example display
-
-```C
-#include "driver_ov2640_basic.h"
-
-uint8_t res;
-
-/* basic init */
-res = ov2640_basic_init();
-if (res != 0)
-{
-    return 1;
-}
-
-/* set to jpeg mode */
-res = ov2640_basic_set_jpeg_mode();
-if (res != 0)
-{
-    (void)ov2640_basic_deinit();
-
-    return 1;
-}
-
-/* set image resolution */
-res = ov2640_basic_set_image_resolution(OV2640_IMAGE_RESOLUTION_QQVGA);
-if (res != 0)
-{
-    (void)ov2640_basic_deinit();
-
-    return 1;
-}
-
-/* delay 500ms */
-ov2640_interface_delay_ms(500);
-
-...
-
-/* finish your jpeg captrue progress */    
-
-...
-
-/* ov2640 deinit */
-(void)ov2640_basic_deinit();
-
-return 0;
-```
-
-#### example photo
 
 ```C
 #include "driver_ov2640_basic.h"
@@ -139,6 +92,53 @@ ov2640_interface_delay_ms(500);
 ...
 
 /* finish your display progress */    
+
+...
+
+/* ov2640 deinit */
+(void)ov2640_basic_deinit();
+
+return 0;
+```
+
+#### example photo
+
+```C
+#include "driver_ov2640_basic.h"
+
+uint8_t res;
+
+/* basic init */
+res = ov2640_basic_init();
+if (res != 0)
+{
+    return 1;
+}
+
+/* set to jpeg mode */
+res = ov2640_basic_set_jpeg_mode();
+if (res != 0)
+{
+    (void)ov2640_basic_deinit();
+
+    return 1;
+}
+
+/* set image resolution */
+res = ov2640_basic_set_image_resolution(OV2640_IMAGE_RESOLUTION_QQVGA);
+if (res != 0)
+{
+    (void)ov2640_basic_deinit();
+
+    return 1;
+}
+
+/* delay 500ms */
+ov2640_interface_delay_ms(500);
+
+...
+
+/* finish your jpeg captrue progress */    
 
 ...
 

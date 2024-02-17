@@ -48,59 +48,13 @@ LibDriver OV2640 ist ein von LibDriver gestarteter Vollfunktionstreiber von OV26
 
 Verweisen Sie auf eine plattformunabhängige SCCB, DVP-Schnittstellenvorlage und stellen Sie Ihren Plattform-SCCB, DVP-Treiber fertig.
 
-Fügen Sie /src, /interface und /example zu Ihrem Projekt hinzu.
+Fügen Sie das Verzeichnis /src, den Schnittstellentreiber für Ihre Plattform und Ihre eigenen Treiber zu Ihrem Projekt hinzu. Wenn Sie die Standardbeispieltreiber verwenden möchten, fügen Sie das Verzeichnis /example zu Ihrem Projekt hinzu.
 
 ### Nutzung
 
-Sie können auf die Beispiele im Verzeichnis/example zurückgreifen, um Ihren eigenen Treiber zu vervollständigen. Wenn Sie die Standardprogrammierbeispiele verwenden möchten, erfahren Sie hier, wie Sie diese verwenden.
+Sie können auf die Beispiele im Verzeichnis /example zurückgreifen, um Ihren eigenen Treiber zu vervollständigen. Wenn Sie die Standardprogrammierbeispiele verwenden möchten, erfahren Sie hier, wie Sie diese verwenden.
 
 #### example display
-
-```C
-#include "driver_ov2640_basic.h"
-
-uint8_t res;
-
-/* basic init */
-res = ov2640_basic_init();
-if (res != 0)
-{
-    return 1;
-}
-
-/* set to jpeg mode */
-res = ov2640_basic_set_jpeg_mode();
-if (res != 0)
-{
-    (void)ov2640_basic_deinit();
-
-    return 1;
-}
-
-/* set image resolution */
-res = ov2640_basic_set_image_resolution(OV2640_IMAGE_RESOLUTION_QQVGA);
-if (res != 0)
-{
-    (void)ov2640_basic_deinit();
-
-    return 1;
-}
-
-/* delay 500ms */
-ov2640_interface_delay_ms(500);
-
-...
-
-/* finish your jpeg captrue progress */    
-
-...
-
-/* ov2640 deinit */
-(void)ov2640_basic_deinit();
-
-return 0;
-```
-#### example photo
 
 ```C
 #include "driver_ov2640_basic.h"
@@ -138,6 +92,53 @@ ov2640_interface_delay_ms(500);
 ...
 
 /* finish your display progress */    
+
+...
+
+/* ov2640 deinit */
+(void)ov2640_basic_deinit();
+
+return 0;
+```
+
+#### example photo
+
+```C
+#include "driver_ov2640_basic.h"
+
+uint8_t res;
+
+/* basic init */
+res = ov2640_basic_init();
+if (res != 0)
+{
+    return 1;
+}
+
+/* set to jpeg mode */
+res = ov2640_basic_set_jpeg_mode();
+if (res != 0)
+{
+    (void)ov2640_basic_deinit();
+
+    return 1;
+}
+
+/* set image resolution */
+res = ov2640_basic_set_image_resolution(OV2640_IMAGE_RESOLUTION_QQVGA);
+if (res != 0)
+{
+    (void)ov2640_basic_deinit();
+
+    return 1;
+}
+
+/* delay 500ms */
+ov2640_interface_delay_ms(500);
+
+...
+
+/* finish your jpeg captrue progress */    
 
 ...
 

@@ -48,60 +48,13 @@ LibDriver OV2640是LibDriver推出的OV2640全功能驱动，该驱动提供图�
 
 参考/interface目录下与平台无关的SCCB, DVP总线模板，完成指定平台的SCCB, DVP总线驱动。
 
-将/src目录，/interface目录和/example目录加入工程。
+将/src目录，您使用平台的接口驱动和您开发的驱动加入工程，如果您想要使用默认的范例驱动，可以将/example目录加入您的工程。
 
 ### 使用
 
 您可以参考/example目录下的编程范例完成适合您的驱动，如果您想要使用默认的编程范例，以下是它们的使用方法。
 
 #### example display
-
-```C
-#include "driver_ov2640_basic.h"
-
-uint8_t res;
-
-/* basic init */
-res = ov2640_basic_init();
-if (res != 0)
-{
-    return 1;
-}
-
-/* set to jpeg mode */
-res = ov2640_basic_set_jpeg_mode();
-if (res != 0)
-{
-    (void)ov2640_basic_deinit();
-
-    return 1;
-}
-
-/* set image resolution */
-res = ov2640_basic_set_image_resolution(OV2640_IMAGE_RESOLUTION_QQVGA);
-if (res != 0)
-{
-    (void)ov2640_basic_deinit();
-
-    return 1;
-}
-
-/* delay 500ms */
-ov2640_interface_delay_ms(500);
-
-...
-
-/* finish your jpeg captrue progress */    
-
-...
-
-/* ov2640 deinit */
-(void)ov2640_basic_deinit();
-
-return 0;
-```
-
-#### example photo
 
 ```C
 #include "driver_ov2640_basic.h"
@@ -139,6 +92,53 @@ ov2640_interface_delay_ms(500);
 ...
 
 /* finish your display progress */    
+
+...
+
+/* ov2640 deinit */
+(void)ov2640_basic_deinit();
+
+return 0;
+```
+
+#### example photo
+
+```C
+#include "driver_ov2640_basic.h"
+
+uint8_t res;
+
+/* basic init */
+res = ov2640_basic_init();
+if (res != 0)
+{
+    return 1;
+}
+
+/* set to jpeg mode */
+res = ov2640_basic_set_jpeg_mode();
+if (res != 0)
+{
+    (void)ov2640_basic_deinit();
+
+    return 1;
+}
+
+/* set image resolution */
+res = ov2640_basic_set_image_resolution(OV2640_IMAGE_RESOLUTION_QQVGA);
+if (res != 0)
+{
+    (void)ov2640_basic_deinit();
+
+    return 1;
+}
+
+/* delay 500ms */
+ov2640_interface_delay_ms(500);
+
+...
+
+/* finish your jpeg captrue progress */    
 
 ...
 
