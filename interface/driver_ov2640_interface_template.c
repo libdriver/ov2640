@@ -62,10 +62,10 @@ uint8_t ov2640_interface_sccb_deinit(void)
 
 /**
  * @brief      interface sccb bus read
- * @param[in]  addr is the sccb device write address
- * @param[in]  reg is the sccb register address
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the length of the data buffer
+ * @param[in]  addr sccb device write address
+ * @param[in]  reg sccb register address
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len length of the data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -78,10 +78,10 @@ uint8_t ov2640_interface_sccb_read(uint8_t addr, uint8_t reg, uint8_t *buf, uint
 
 /**
  * @brief     interface sccb bus write
- * @param[in] addr is the sccb device write address
- * @param[in] reg is the sccb register address
- * @param[in] *buf points to a data buffer
- * @param[in] len is the length of the data buffer
+ * @param[in] addr sccb device write address
+ * @param[in] reg sccb register address
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len length of the data buffer
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -118,7 +118,7 @@ uint8_t ov2640_interface_power_down_deinit(void)
 
 /**
  * @brief     interface power down write
- * @param[in] level is the set level
+ * @param[in] level set level
  * @return    status code
  *            - 0 success
  *            - 1 power down write failed
@@ -155,7 +155,7 @@ uint8_t ov2640_interface_reset_deinit(void)
 
 /**
  * @brief     interface reset write
- * @param[in] level is the set level
+ * @param[in] level set level
  * @return    status code
  *            - 0 success
  *            - 1 reset write failed
@@ -168,7 +168,7 @@ uint8_t ov2640_interface_reset_write(uint8_t level)
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void ov2640_interface_delay_ms(uint32_t ms)
@@ -178,7 +178,7 @@ void ov2640_interface_delay_ms(uint32_t ms)
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void ov2640_interface_debug_print(const char *const fmt, ...)

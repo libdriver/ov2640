@@ -214,7 +214,7 @@ uint8_t ov2640_basic_set_rgb565_mode(void);
 
 /**
  * @brief     basic example set light mode
- * @param[in] mode is the light mode
+ * @param[in] mode light mode
  * @return    status code
  *            - 0 success
  *            - 1 set light mode failed
@@ -224,7 +224,7 @@ uint8_t ov2640_basic_set_light_mode(ov2640_light_mode_t mode);
 
 /**
  * @brief     basic example set color saturation
- * @param[in] color is the color saturation
+ * @param[in] color color saturation
  * @return    status code
  *            - 0 success
  *            - 1 set color saturation failed
@@ -234,7 +234,7 @@ uint8_t ov2640_basic_set_color_saturation(ov2640_color_saturation_t color);
 
 /**
  * @brief     basic example set brightness
- * @param[in] brightness is the brightness
+ * @param[in] brightness set brightness
  * @return    status code
  *            - 0 success
  *            - 1 set brightness failed
@@ -244,7 +244,7 @@ uint8_t ov2640_basic_set_brightness(ov2640_brightness_t brightness);
 
 /**
  * @brief     basic example set contrast
- * @param[in] contrast is the set contrast
+ * @param[in] contrast set contrast
  * @return    status code
  *            - 0 success
  *            - 1 set contrast failed
@@ -254,7 +254,7 @@ uint8_t ov2640_basic_set_contrast(ov2640_contrast_t contrast);
 
 /**
  * @brief     basic example set special effect
- * @param[in] effect is the set special effect
+ * @param[in] effect set special effect
  * @return    status code
  *            - 0 success
  *            - 1 set special_effect failed
@@ -264,7 +264,7 @@ uint8_t ov2640_basic_set_special_effect(ov2640_special_effect_t effect);
 
 /**
  * @brief     basic example set image resolution
- * @param[in] resolution is the set image resolution
+ * @param[in] resolution set image resolution
  * @return    status code
  *            - 0 success
  *            - 1 set image resolution failed
