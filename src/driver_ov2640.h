@@ -370,104 +370,104 @@ typedef struct ov2640_info_s
 
 /**
  * @brief     initialize ov2640_handle_t structure
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] STRUCTURE is ov2640_handle_t
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] STRUCTURE ov2640_handle_t
  * @note      none
  */
 #define DRIVER_OV2640_LINK_INIT(HANDLE, STRUCTURE)               memset(HANDLE, 0, sizeof(STRUCTURE))
 
 /**
  * @brief     link sccb_init function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to an sccb_init function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to an sccb_init function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_SCCB_INIT(HANDLE, FUC)                (HANDLE)->sccb_init = FUC
 
 /**
  * @brief     link sccb_deinit function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to an sccb_deinit function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to an sccb_deinit function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_SCCB_DEINIT(HANDLE, FUC)              (HANDLE)->sccb_deinit = FUC
 
 /**
  * @brief     link sccb_read function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to an sccb_read function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to an sccb_read function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_SCCB_READ(HANDLE, FUC)                (HANDLE)->sccb_read = FUC
 
 /**
  * @brief     link sccb_write function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to an sccb_write function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to an sccb_write function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_SCCB_WRITE(HANDLE, FUC)               (HANDLE)->sccb_write = FUC
 
 /**
  * @brief     link power_down_init function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to an power_down_init function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to an power_down_init function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_POWER_DOWN_INIT(HANDLE, FUC)          (HANDLE)->power_down_init = FUC
 
 /**
  * @brief     link power_down_deinit function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to an power_down_deinit function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to an power_down_deinit function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_POWER_DOWN_DEINIT(HANDLE, FUC)        (HANDLE)->power_down_deinit = FUC
 
 /**
  * @brief     link power_down_write function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to an power_down_write function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to an power_down_write function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_POWER_DOWN_WRITE(HANDLE, FUC)         (HANDLE)->power_down_write = FUC
 
 /**
  * @brief     link reset_init function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to an reset_init function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to an reset_init function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_RESET_INIT(HANDLE, FUC)               (HANDLE)->reset_init = FUC
 
 /**
  * @brief     link reset_deinit function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to an reset_deinit function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to an reset_deinit function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_RESET_DEINIT(HANDLE, FUC)             (HANDLE)->reset_deinit = FUC
 
 /**
  * @brief     link reset_write function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to an reset_write function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to an reset_write function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_RESET_WRITE(HANDLE, FUC)              (HANDLE)->reset_write = FUC
 
 /**
  * @brief     link delay_ms function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to a delay_ms function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to a delay_ms function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_DELAY_MS(HANDLE, FUC)                 (HANDLE)->delay_ms = FUC
 
 /**
  * @brief     link debug_print function
- * @param[in] HANDLE points to an ov2640 handle structure
- * @param[in] FUC points to a debug_print function address
+ * @param[in] HANDLE pointer to an ov2640 handle structure
+ * @param[in] FUC pointer to a debug_print function address
  * @note      none
  */
 #define DRIVER_OV2640_LINK_DEBUG_PRINT(HANDLE, FUC)              (HANDLE)->debug_print = FUC
@@ -485,7 +485,7 @@ typedef struct ov2640_info_s
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an ov2640 info structure
+ * @param[out] *info pointer to an ov2640 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -495,7 +495,7 @@ uint8_t ov2640_info(ov2640_info_t *info);
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an ov2640 handle structure
+ * @param[in] *handle pointer to an ov2640 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 sccb initialization failed
@@ -512,7 +512,7 @@ uint8_t ov2640_init(ov2640_handle_t *handle);
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an ov2640 handle structure
+ * @param[in] *handle pointer to an ov2640 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic deinit failed
@@ -526,7 +526,7 @@ uint8_t ov2640_deinit(ov2640_handle_t *handle);
 
 /**
  * @brief     table init
- * @param[in] *handle points to an ov2640 handle structure
+ * @param[in] *handle pointer to an ov2640 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 table init failed
@@ -538,7 +538,7 @@ uint8_t ov2640_table_init(ov2640_handle_t *handle);
 
 /**
  * @brief     table jpeg init
- * @param[in] *handle points to an ov2640 handle structure
+ * @param[in] *handle pointer to an ov2640 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 table jpeg init failed
@@ -550,7 +550,7 @@ uint8_t ov2640_table_jpeg_init(ov2640_handle_t *handle);
 
 /**
  * @brief     table rgb565 init
- * @param[in] *handle points to an ov2640 handle structure
+ * @param[in] *handle pointer to an ov2640 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 table rgb565 init failed
@@ -562,8 +562,8 @@ uint8_t ov2640_table_rgb565_init(ov2640_handle_t *handle);
 
 /**
  * @brief     set agc gain
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] gain is the set gain
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] gain set gain
  * @return    status code
  *            - 0 success
  *            - 1 set agc gain failed
@@ -577,8 +577,8 @@ uint8_t ov2640_set_agc_gain(ov2640_handle_t *handle, uint16_t gain);
 
 /**
  * @brief      get agc gain
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *gain points to a gain buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *gain pointer to a gain buffer
  * @return     status code
  *             - 0 success
  *             - 1 get agc gain failed
@@ -590,8 +590,8 @@ uint8_t ov2640_get_agc_gain(ov2640_handle_t *handle, uint16_t *gain);
 
 /**
  * @brief     set dummy frame
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] frame is the set frame
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] frame set frame
  * @return    status code
  *            - 0 success
  *            - 1 set dummy frame failed
@@ -603,8 +603,8 @@ uint8_t ov2640_set_dummy_frame(ov2640_handle_t *handle, ov2640_dummy_frame_t fra
 
 /**
  * @brief      get dummy frame
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *frame points to a frame buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *frame pointer to a frame buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dummy frame failed
@@ -616,8 +616,8 @@ uint8_t ov2640_get_dummy_frame(ov2640_handle_t *handle, ov2640_dummy_frame_t *fr
 
 /**
  * @brief     set vertical window line start
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] start is the set start
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] start set start
  * @return    status code
  *            - 0 success
  *            - 1 set vertical window line start failed
@@ -630,8 +630,8 @@ uint8_t ov2640_set_vertical_window_line_start(ov2640_handle_t *handle, uint16_t 
 
 /**
  * @brief      get vertical window line start
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *start points to a start buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *start pointer to a start buffer
  * @return     status code
  *             - 0 success
  *             - 1 get vertical window line start failed
@@ -643,8 +643,8 @@ uint8_t ov2640_get_vertical_window_line_start(ov2640_handle_t *handle, uint16_t 
 
 /**
  * @brief     set vertical window line end
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] end is the set end
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] end set end
  * @return    status code
  *            - 0 success
  *            - 1 set vertical window line end failed
@@ -657,8 +657,8 @@ uint8_t ov2640_set_vertical_window_line_end(ov2640_handle_t *handle, uint16_t en
 
 /**
  * @brief      get vertical window line end
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *end points to an end buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *end pointer to an end buffer
  * @return     status code
  *             - 0 success
  *             - 1 get vertical window line end failed
@@ -670,8 +670,8 @@ uint8_t ov2640_get_vertical_window_line_end(ov2640_handle_t *handle, uint16_t *e
 
 /**
  * @brief     enable or disable horizontal mirror
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set horizontal mirror failed
@@ -683,8 +683,8 @@ uint8_t ov2640_set_horizontal_mirror(ov2640_handle_t *handle, ov2640_bool_t enab
 
 /**
  * @brief      get horizontal mirror status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get horizontal mirror failed
@@ -696,8 +696,8 @@ uint8_t ov2640_get_horizontal_mirror(ov2640_handle_t *handle, ov2640_bool_t *ena
 
 /**
  * @brief     enable or disable vertical flip
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set vertical flip failed
@@ -709,8 +709,8 @@ uint8_t ov2640_set_vertical_flip(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get vertical flip status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get vertical flip failed
@@ -722,8 +722,8 @@ uint8_t ov2640_get_vertical_flip(ov2640_handle_t *handle, ov2640_bool_t *enable)
 
 /**
  * @brief     set aec
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] aec is the set param
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] aec set param
  * @return    status code
  *            - 0 success
  *            - 1 set aec failed
@@ -735,8 +735,8 @@ uint8_t ov2640_set_aec(ov2640_handle_t *handle, uint16_t aec);
 
 /**
  * @brief      get aec
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *aec points to an aec buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *aec pointer to an aec buffer
  * @return     status code
  *             - 0 success
  *             - 1 get aec failed
@@ -748,8 +748,8 @@ uint8_t ov2640_get_aec(ov2640_handle_t *handle, uint16_t *aec);
 
 /**
  * @brief     set frame exposure pre charge row number
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] num is the pre charge row number
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] num pre charge row number
  * @return    status code
  *            - 0 success
  *            - 1 set frame exposure pre charge row number failed
@@ -761,8 +761,8 @@ uint8_t ov2640_set_frame_exposure_pre_charge_row_number(ov2640_handle_t *handle,
 
 /**
  * @brief      get frame exposure pre charge row number
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *num points to a pre charge row number buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *num pointer to a pre charge row number buffer
  * @return     status code
  *             - 0 success
  *             - 1 get frame exposure pre charge row number failed
@@ -774,8 +774,8 @@ uint8_t ov2640_get_frame_exposure_pre_charge_row_number(ov2640_handle_t *handle,
 
 /**
  * @brief     set mode
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] mode is the set mode
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] mode set mode
  * @return    status code
  *            - 0 success
  *            - 1 set mode failed
@@ -787,8 +787,8 @@ uint8_t ov2640_set_mode(ov2640_handle_t *handle, ov2640_mode_t mode);
 
 /**
  * @brief      get mode
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *mode points to a mode buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *mode pointer to a mode buffer
  * @return     status code
  *             - 0 success
  *             - 1 get mode failed
@@ -800,8 +800,8 @@ uint8_t ov2640_get_mode(ov2640_handle_t *handle, ov2640_mode_t *mode);
 
 /**
  * @brief     enable or disable power reset pin remap
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set power reset pin remap failed
@@ -813,8 +813,8 @@ uint8_t ov2640_set_power_reset_pin_remap(ov2640_handle_t *handle, ov2640_bool_t 
 
 /**
  * @brief      get power reset pin remap status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get power reset pin remap failed
@@ -826,8 +826,8 @@ uint8_t ov2640_get_power_reset_pin_remap(ov2640_handle_t *handle, ov2640_bool_t 
 
 /**
  * @brief     set output drive
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] select is the output drive
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] select output drive
  * @return    status code
  *            - 0 success
  *            - 1 set output drive failed
@@ -839,8 +839,8 @@ uint8_t ov2640_set_output_drive(ov2640_handle_t *handle, ov2640_output_drive_t s
 
 /**
  * @brief      get output drive
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *select points to an output drive buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *select pointer to an output drive buffer
  * @return     status code
  *             - 0 success
  *             - 1 get output drive failed
@@ -852,8 +852,8 @@ uint8_t ov2640_get_output_drive(ov2640_handle_t *handle, ov2640_output_drive_t *
 
 /**
  * @brief     set band
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] band is the set band
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] band set band
  * @return    status code
  *            - 0 success
  *            - 1 set band failed
@@ -865,8 +865,8 @@ uint8_t ov2640_set_band(ov2640_handle_t *handle, ov2640_band_t band);
 
 /**
  * @brief      get band
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *band points to a band buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *band pointer to a band buffer
  * @return     status code
  *             - 0 success
  *             - 1 get band failed
@@ -878,8 +878,8 @@ uint8_t ov2640_get_band(ov2640_handle_t *handle, ov2640_band_t *band);
 
 /**
  * @brief     enable or disable auto band
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set auto band failed
@@ -891,8 +891,8 @@ uint8_t ov2640_set_auto_band(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get auto band status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get auto band failed
@@ -904,8 +904,8 @@ uint8_t ov2640_get_auto_band(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable live video after snapshot
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set live video after snapshot failed
@@ -917,8 +917,8 @@ uint8_t ov2640_set_live_video_after_snapshot(ov2640_handle_t *handle, ov2640_boo
 
 /**
  * @brief      get live video after snapshot status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get live video after snapshot failed
@@ -930,8 +930,8 @@ uint8_t ov2640_get_live_video_after_snapshot(ov2640_handle_t *handle, ov2640_boo
 
 /**
  * @brief     set clock output power down pin status
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] status is the set pin status
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] status set pin status
  * @return    status code
  *            - 0 success
  *            - 1 set clock output power down pin status failed
@@ -943,8 +943,8 @@ uint8_t ov2640_set_clock_output_power_down_pin_status(ov2640_handle_t *handle, o
 
 /**
  * @brief      get clock output power down pin status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *status points to a pin status buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *status pointer to a pin status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get clock output power down pin status failed
@@ -956,8 +956,8 @@ uint8_t ov2640_get_clock_output_power_down_pin_status(ov2640_handle_t *handle, o
 
 /**
  * @brief     enable or disable double clock rate
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set clock rate double failed
@@ -969,8 +969,8 @@ uint8_t ov2640_set_clock_rate_double(ov2640_handle_t *handle, ov2640_bool_t enab
 
 /**
  * @brief      get clock rate double status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get clock rate double failed
@@ -982,8 +982,8 @@ uint8_t ov2640_get_clock_rate_double(ov2640_handle_t *handle, ov2640_bool_t *ena
 
 /**
  * @brief     set clock divider
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] divider is the set divider
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] divider set divider
  * @return    status code
  *            - 0 success
  *            - 1 set clock divider failed
@@ -996,8 +996,8 @@ uint8_t ov2640_set_clock_divider(ov2640_handle_t *handle, uint8_t divider);
 
 /**
  * @brief      get clock divider
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *divider points to a divider buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *divider pointer to a divider buffer
  * @return     status code
  *             - 0 success
  *             - 1 get clock divider failed
@@ -1009,7 +1009,7 @@ uint8_t ov2640_get_clock_divider(ov2640_handle_t *handle, uint8_t *divider);
 
 /**
  * @brief     soft reset
- * @param[in] *handle points to an ov2640 handle structure
+ * @param[in] *handle pointer to an ov2640 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 soft reset failed
@@ -1021,8 +1021,8 @@ uint8_t ov2640_soft_reset(ov2640_handle_t *handle);
 
 /**
  * @brief     set resolution
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] resolution is the set resolution
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] resolution set resolution
  * @return    status code
  *            - 0 success
  *            - 1 set resolution failed
@@ -1034,8 +1034,8 @@ uint8_t ov2640_set_resolution(ov2640_handle_t *handle, ov2640_resolution_t resol
 
 /**
  * @brief      get resolution
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *resolution points to a resolution buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *resolution pointer to a resolution buffer
  * @return     status code
  *             - 0 success
  *             - 1 get resolution failed
@@ -1047,8 +1047,8 @@ uint8_t ov2640_get_resolution(ov2640_handle_t *handle, ov2640_resolution_t *reso
 
 /**
  * @brief     enable or disable zoom
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set zoom failed
@@ -1060,8 +1060,8 @@ uint8_t ov2640_set_zoom(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get zoom status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get zoom failed
@@ -1073,8 +1073,8 @@ uint8_t ov2640_get_zoom(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable color bar test
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set color bar test failed
@@ -1086,8 +1086,8 @@ uint8_t ov2640_set_color_bar_test(ov2640_handle_t *handle, ov2640_bool_t enable)
 
 /**
  * @brief      get color bar test status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get color bar test failed
@@ -1099,8 +1099,8 @@ uint8_t ov2640_get_color_bar_test(ov2640_handle_t *handle, ov2640_bool_t *enable
 
 /**
  * @brief     enable or disable band filter
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set band filter failed
@@ -1112,8 +1112,8 @@ uint8_t ov2640_set_band_filter(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get band filter status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get band filter failed
@@ -1125,8 +1125,8 @@ uint8_t ov2640_get_band_filter(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     set agc control
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] control is the set control
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] control set control
  * @return    status code
  *            - 0 success
  *            - 1 set agc control failed
@@ -1138,8 +1138,8 @@ uint8_t ov2640_set_agc_control(ov2640_handle_t *handle, ov2640_control_t control
 
 /**
  * @brief      get agc control
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *control points to a control buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *control pointer to a control buffer
  * @return     status code
  *             - 0 success
  *             - 1 get agc control failed
@@ -1151,8 +1151,8 @@ uint8_t ov2640_get_agc_control(ov2640_handle_t *handle, ov2640_control_t *contro
 
 /**
  * @brief     set exposure control
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] control is the set control
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] control set control
  * @return    status code
  *            - 0 success
  *            - 1 set exposure control failed
@@ -1164,8 +1164,8 @@ uint8_t ov2640_set_exposure_control(ov2640_handle_t *handle, ov2640_control_t co
 
 /**
  * @brief      get exposure control
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *control points to a control buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *control pointer to a control buffer
  * @return     status code
  *             - 0 success
  *             - 1 get exposure control failed
@@ -1177,8 +1177,8 @@ uint8_t ov2640_get_exposure_control(ov2640_handle_t *handle, ov2640_control_t *c
 
 /**
  * @brief     set agc
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] agc is the set agc
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] agc set agc
  * @return    status code
  *            - 0 success
  *            - 1 set agc failed
@@ -1190,8 +1190,8 @@ uint8_t ov2640_set_agc_gain_ceiling(ov2640_handle_t *handle, ov2640_agc_gain_t a
 
 /**
  * @brief      get agc
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *agc points to an agc buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *agc pointer to an agc buffer
  * @return     status code
  *             - 0 success
  *             - 1 get agc failed
@@ -1203,8 +1203,8 @@ uint8_t ov2640_get_agc_gain_ceiling(ov2640_handle_t *handle, ov2640_agc_gain_t *
 
 /**
  * @brief     enable or disable chsync href swap
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set chsync href swap failed
@@ -1216,8 +1216,8 @@ uint8_t ov2640_set_chsync_href_swap(ov2640_handle_t *handle, ov2640_bool_t enabl
 
 /**
  * @brief      get chsync href swap status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get chsync href swap failed
@@ -1229,8 +1229,8 @@ uint8_t ov2640_get_chsync_href_swap(ov2640_handle_t *handle, ov2640_bool_t *enab
 
 /**
  * @brief     enable or disable href chsync swap
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set href chsync swap failed
@@ -1242,8 +1242,8 @@ uint8_t ov2640_set_href_chsync_swap(ov2640_handle_t *handle, ov2640_bool_t enabl
 
 /**
  * @brief      get href chsync swap status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get href chsync swap failed
@@ -1255,8 +1255,8 @@ uint8_t ov2640_get_href_chsync_swap(ov2640_handle_t *handle, ov2640_bool_t *enab
 
 /**
  * @brief     enable or disable pclk output qualified by href
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set pclk output qualified by href failed
@@ -1268,8 +1268,8 @@ uint8_t ov2640_set_pclk_output_qualified_by_href(ov2640_handle_t *handle, ov2640
 
 /**
  * @brief      get pclk output qualified by href status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get pclk output qualified by href failed
@@ -1281,8 +1281,8 @@ uint8_t ov2640_get_pclk_output_qualified_by_href(ov2640_handle_t *handle, ov2640
 
 /**
  * @brief     set pclk edge
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] edge is the pclk edge
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] edge pclk edge
  * @return    status code
  *            - 0 success
  *            - 1 set pclk edge failed
@@ -1294,8 +1294,8 @@ uint8_t ov2640_set_pclk_edge(ov2640_handle_t *handle, ov2640_edge_t edge);
 
 /**
  * @brief      get pclk edge
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *edge points to an edge buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *edge pointer to an edge buffer
  * @return     status code
  *             - 0 success
  *             - 1 get pclk edge failed
@@ -1307,8 +1307,8 @@ uint8_t ov2640_get_pclk_edge(ov2640_handle_t *handle, ov2640_edge_t *edge);
 
 /**
  * @brief     set href polarity
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] polarity is the set polarity
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] polarity set polarity
  * @return    status code
  *            - 0 success
  *            - 1 set href polarity failed
@@ -1320,8 +1320,8 @@ uint8_t ov2640_set_href_polarity(ov2640_handle_t *handle, ov2640_polarity_t pola
 
 /**
  * @brief      get href polarity
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *polarity points to a polarity buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *polarity pointer to a polarity buffer
  * @return     status code
  *             - 0 success
  *             - 1 get href polarity failed
@@ -1333,8 +1333,8 @@ uint8_t ov2640_get_href_polarity(ov2640_handle_t *handle, ov2640_polarity_t *pol
 
 /**
  * @brief     set vsync polarity
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] polarity is the set polarity
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] polarity set polarity
  * @return    status code
  *            - 0 success
  *            - 1 set vsync polarity failed
@@ -1346,8 +1346,8 @@ uint8_t ov2640_set_vsync_polarity(ov2640_handle_t *handle, ov2640_polarity_t pol
 
 /**
  * @brief      get vsync polarity
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *polarity points to a polarity buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *polarity pointer to a polarity buffer
  * @return     status code
  *             - 0 success
  *             - 1 get vsync polarity failed
@@ -1359,8 +1359,8 @@ uint8_t ov2640_get_vsync_polarity(ov2640_handle_t *handle, ov2640_polarity_t *po
 
 /**
  * @brief     set hsync polarity
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] polarity is the set polarity
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] polarity set polarity
  * @return    status code
  *            - 0 success
  *            - 1 set hsync polarity failed
@@ -1372,8 +1372,8 @@ uint8_t ov2640_set_hsync_polarity(ov2640_handle_t *handle, ov2640_polarity_t pol
 
 /**
  * @brief      get hsync polarity
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *polarity points to a polarity buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *polarity pointer to a polarity buffer
  * @return     status code
  *             - 0 success
  *             - 1 get hsync polarity failed
@@ -1385,8 +1385,8 @@ uint8_t ov2640_get_hsync_polarity(ov2640_handle_t *handle, ov2640_polarity_t *po
 
 /**
  * @brief     set luminance signal high range
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] range is the set range
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] range set range
  * @return    status code
  *            - 0 success
  *            - 1 set luminance signal high range failed
@@ -1398,8 +1398,8 @@ uint8_t ov2640_set_luminance_signal_high_range(ov2640_handle_t *handle, uint8_t 
 
 /**
  * @brief      get luminance signal high range
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *range points to a range buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *range pointer to a range buffer
  * @return     status code
  *             - 0 success
  *             - 1 get luminance signal high range failed
@@ -1411,8 +1411,8 @@ uint8_t ov2640_get_luminance_signal_high_range(ov2640_handle_t *handle, uint8_t 
 
 /**
  * @brief     set luminance signal low range
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] range is the set range
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] range set range
  * @return    status code
  *            - 0 success
  *            - 1 set luminance signal low range failed
@@ -1424,8 +1424,8 @@ uint8_t ov2640_set_luminance_signal_low_range(ov2640_handle_t *handle, uint8_t r
 
 /**
  * @brief      get luminance signal low range
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *range points to a range buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *range pointer to a range buffer
  * @return     status code
  *             - 0 success
  *             - 1 get luminance signal low range failed
@@ -1437,9 +1437,9 @@ uint8_t ov2640_get_luminance_signal_low_range(ov2640_handle_t *handle, uint8_t *
 
 /**
  * @brief     set fast mode large step range
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] high_threshold is the set high threshold
- * @param[in] low_threshold is the set low threshold
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] high_threshold set high threshold
+ * @param[in] low_threshold set low threshold
  * @return    status code
  *            - 0 success
  *            - 1 set fast mode large step range failed
@@ -1453,9 +1453,9 @@ uint8_t ov2640_set_fast_mode_large_step_range(ov2640_handle_t *handle, uint8_t h
 
 /**
  * @brief      get fast mode large step range
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *high_threshold points to a high threshold buffer
- * @param[out] *low_threshold points to a low threshold buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *high_threshold pointer to a high threshold buffer
+ * @param[out] *low_threshold pointer to a low threshold buffer
  * @return     status code
  *             - 0 success
  *             - 1 get fast mode large step range failed
@@ -1467,8 +1467,8 @@ uint8_t ov2640_get_fast_mode_large_step_range(ov2640_handle_t *handle, uint8_t *
 
 /**
  * @brief     set line interval adjust
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] adjust is the set line interval adjust
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] adjust set line interval adjust
  * @return    status code
  *            - 0 success
  *            - 1 set line interval adjust failed
@@ -1481,8 +1481,8 @@ uint8_t ov2640_set_line_interval_adjust(ov2640_handle_t *handle, uint16_t adjust
 
 /**
  * @brief      get line interval adjust
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *adjust points to a line interval adjust buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *adjust pointer to a line interval adjust buffer
  * @return     status code
  *             - 0 success
  *             - 1 get line interval adjust failed
@@ -1494,8 +1494,8 @@ uint8_t ov2640_get_line_interval_adjust(ov2640_handle_t *handle, uint16_t *adjus
 
 /**
  * @brief     set hsync position and width end point
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] position is the set position
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] position set position
  * @return    status code
  *            - 0 success
  *            - 1 set hsync position and width end point failed
@@ -1508,8 +1508,8 @@ uint8_t ov2640_set_hsync_position_and_width_end_point(ov2640_handle_t *handle, u
 
 /**
  * @brief      get hsync position and width end point
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *position points to a position buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *position pointer to a position buffer
  * @return     status code
  *             - 0 success
  *             - 1 get hsync position and width end point failed
@@ -1521,8 +1521,8 @@ uint8_t ov2640_get_hsync_position_and_width_end_point(ov2640_handle_t *handle, u
 
 /**
  * @brief     set hsync position and width start point
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] position is the set position
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] position set position
  * @return    status code
  *            - 0 success
  *            - 1 set hsync position and width start point failed
@@ -1535,8 +1535,8 @@ uint8_t ov2640_set_hsync_position_and_width_start_point(ov2640_handle_t *handle,
 
 /**
  * @brief      get hsync position and width start point
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *position points to a position buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *position pointer to a position buffer
  * @return     status code
  *             - 0 success
  *             - 1 get hsync position and width start point failed
@@ -1548,8 +1548,8 @@ uint8_t ov2640_get_hsync_position_and_width_start_point(ov2640_handle_t *handle,
 
 /**
  * @brief     set vsync pulse width
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] width is the set width
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] width set width
  * @return    status code
  *            - 0 success
  *            - 1 set vsync pulse width failed
@@ -1561,8 +1561,8 @@ uint8_t ov2640_set_vsync_pulse_width(ov2640_handle_t *handle, uint16_t width);
 
 /**
  * @brief      get vsync pulse width
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *width points to a width buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *width pointer to a width buffer
  * @return     status code
  *             - 0 success
  *             - 1 get vsync pulse width failed
@@ -1574,8 +1574,8 @@ uint8_t ov2640_get_vsync_pulse_width(ov2640_handle_t *handle, uint16_t *width);
 
 /**
  * @brief     set luminance average
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] average is the luminance average
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] average luminance average
  * @return    status code
  *            - 0 success
  *            - 1 set luminance average failed
@@ -1587,8 +1587,8 @@ uint8_t ov2640_set_luminance_average(ov2640_handle_t *handle, uint8_t average);
 
 /**
  * @brief      get luminance average
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *average points to a luminance average buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *average pointer to a luminance average buffer
  * @return     status code
  *             - 0 success
  *             - 1 get luminance average failed
@@ -1600,8 +1600,8 @@ uint8_t ov2640_get_luminance_average(ov2640_handle_t *handle, uint8_t *average);
 
 /**
  * @brief     set horizontal window start
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] start is the horizontal window start
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] start horizontal window start
  * @return    status code
  *            - 0 success
  *            - 1 set horizontal window start failed
@@ -1614,8 +1614,8 @@ uint8_t ov2640_set_horizontal_window_start(ov2640_handle_t *handle, uint16_t sta
 
 /**
  * @brief      get horizontal window start
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *start points to a horizontal window start buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *start pointer to a horizontal window start buffer
  * @return     status code
  *             - 0 success
  *             - 1 get horizontal window start failed
@@ -1627,8 +1627,8 @@ uint8_t ov2640_get_horizontal_window_start(ov2640_handle_t *handle, uint16_t *st
 
 /**
  * @brief     set horizontal window end
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] end is the horizontal window end
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] end horizontal window end
  * @return    status code
  *            - 0 success
  *            - 1 set horizontal window end failed
@@ -1641,8 +1641,8 @@ uint8_t ov2640_set_horizontal_window_end(ov2640_handle_t *handle, uint16_t end);
 
 /**
  * @brief      get horizontal window end
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *end points to a horizontal window end buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *end pointer to a horizontal window end buffer
  * @return     status code
  *             - 0 success
  *             - 1 get horizontal window end failed
@@ -1654,8 +1654,8 @@ uint8_t ov2640_get_horizontal_window_end(ov2640_handle_t *handle, uint16_t *end)
 
 /**
  * @brief     set pclk
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] pclk is the set pclk
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] pclk set pclk
  * @return    status code
  *            - 0 success
  *            - 1 set pclk failed
@@ -1667,8 +1667,8 @@ uint8_t ov2640_set_pclk(ov2640_handle_t *handle, ov2640_pclk_t pclk);
 
 /**
  * @brief      get pclk
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *pclk points to a pclk buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *pclk pointer to a pclk buffer
  * @return     status code
  *             - 0 success
  *             - 1 get pclk failed
@@ -1680,8 +1680,8 @@ uint8_t ov2640_get_pclk(ov2640_handle_t *handle, ov2640_pclk_t *pclk);
 
 /**
  * @brief     enable or disable zoom window horizontal start point
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set zoom window horizontal start point failed
@@ -1693,8 +1693,8 @@ uint8_t ov2640_set_zoom_window_horizontal_start_point(ov2640_handle_t *handle, o
 
 /**
  * @brief      get zoom window horizontal start point status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get zoom window horizontal start point failed
@@ -1706,8 +1706,8 @@ uint8_t ov2640_get_zoom_window_horizontal_start_point(ov2640_handle_t *handle, o
 
 /**
  * @brief     set frame length adjustment
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] frame is the set frame
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] frame set frame
  * @return    status code
  *            - 0 success
  *            - 1 set frame length adjustment failed
@@ -1720,8 +1720,8 @@ uint8_t ov2640_set_frame_length_adjustment(ov2640_handle_t *handle, uint16_t fra
 
 /**
  * @brief      get frame length adjustment
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *frame points to a frame buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *frame pointer to a frame buffer
  * @return     status code
  *             - 0 success
  *             - 1 get frame length adjustment failed
@@ -1733,8 +1733,8 @@ uint8_t ov2640_get_frame_length_adjustment(ov2640_handle_t *handle, uint16_t *fr
 
 /**
  * @brief     set zoom mode vertical window start point
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] point is the set point
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] point set point
  * @return    status code
  *            - 0 success
  *            - 1 set zoom mode vertical window start point failed
@@ -1747,8 +1747,8 @@ uint8_t ov2640_set_zoom_mode_vertical_window_start_point(ov2640_handle_t *handle
 
 /**
  * @brief      get zoom mode vertical window start point
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *point points to a point buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *point pointer to a point buffer
  * @return     status code
  *             - 0 success
  *             - 1 get zoom mode vertical window start point failed
@@ -1760,8 +1760,8 @@ uint8_t ov2640_get_zoom_mode_vertical_window_start_point(ov2640_handle_t *handle
 
 /**
  * @brief     set flash light
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] control is the set control
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] control set control
  * @return    status code
  *            - 0 success
  *            - 1 set flash light failed
@@ -1773,8 +1773,8 @@ uint8_t ov2640_set_flash_light(ov2640_handle_t *handle, uint8_t control);
 
 /**
  * @brief      get flash light
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *control points to a control buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *control pointer to a control buffer
  * @return     status code
  *             - 0 success
  *             - 1 get flash light failed
@@ -1786,8 +1786,8 @@ uint8_t ov2640_get_flash_light(ov2640_handle_t *handle, uint8_t *control);
 
 /**
  * @brief     set 50hz banding aec
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] aec is the set aec
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] aec set aec
  * @return    status code
  *            - 0 success
  *            - 1 set 50hz banding aec failed
@@ -1800,8 +1800,8 @@ uint8_t ov2640_set_50hz_banding_aec(ov2640_handle_t *handle, uint16_t aec);
 
 /**
  * @brief      get 50hz banding aec
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *aec points to an aec buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *aec pointer to an aec buffer
  * @return     status code
  *             - 0 success
  *             - 1 get 50hz banding aec failed
@@ -1813,8 +1813,8 @@ uint8_t ov2640_get_50hz_banding_aec(ov2640_handle_t *handle, uint16_t *aec);
 
 /**
  * @brief     set 60hz banding aec
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] aec is the set aec
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] aec set aec
  * @return    status code
  *            - 0 success
  *            - 1 set 60hz banding aec failed
@@ -1827,8 +1827,8 @@ uint8_t ov2640_set_60hz_banding_aec(ov2640_handle_t *handle, uint16_t aec);
 
 /**
  * @brief      get 60hz banding aec
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *aec points to an aec buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *aec pointer to an aec buffer
  * @return     status code
  *             - 0 success
  *             - 1 get 60hz banding aec failed
@@ -1840,8 +1840,8 @@ uint8_t ov2640_get_60hz_banding_aec(ov2640_handle_t *handle, uint16_t *aec);
 
 /**
  * @brief     set 16 zone average weight option
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] avg is the set avg
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] avg set avg
  * @return    status code
  *            - 0 success
  *            - 1 set 16 zone average weight option failed
@@ -1853,8 +1853,8 @@ uint8_t ov2640_set_16_zone_average_weight_option(ov2640_handle_t *handle, uint32
 
 /**
  * @brief      get 16 zone average weight option
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *avg points to an avg buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *avg pointer to an avg buffer
  * @return     status code
  *             - 0 success
  *             - 1 get 16 zone average weight option failed
@@ -1866,8 +1866,8 @@ uint8_t ov2640_get_16_zone_average_weight_option(ov2640_handle_t *handle, uint32
 
 /**
  * @brief     set histogram algorithm low level
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] level is the low level
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] level low level
  * @return    status code
  *            - 0 success
  *            - 1 set histogram algorithm low level failed
@@ -1879,8 +1879,8 @@ uint8_t ov2640_set_histogram_algorithm_low_level(ov2640_handle_t *handle, uint8_
 
 /**
  * @brief      get histogram algorithm low level
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *level points to a low level buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *level pointer to a low level buffer
  * @return     status code
  *             - 0 success
  *             - 1 get histogram algorithm low level failed
@@ -1892,8 +1892,8 @@ uint8_t ov2640_get_histogram_algorithm_low_level(ov2640_handle_t *handle, uint8_
 
 /**
  * @brief     set histogram algorithm high level
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] level is the high level
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] level high level
  * @return    status code
  *            - 0 success
  *            - 1 set histogram algorithm high level failed
@@ -1905,8 +1905,8 @@ uint8_t ov2640_set_histogram_algorithm_high_level(ov2640_handle_t *handle, uint8
 
 /**
  * @brief      get histogram algorithm high level
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *level points to a high level buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *level pointer to a high level buffer
  * @return     status code
  *             - 0 success
  *             - 1 get histogram algorithm high level failed
@@ -1929,8 +1929,8 @@ uint8_t ov2640_get_histogram_algorithm_high_level(ov2640_handle_t *handle, uint8
 
 /**
  * @brief     enable or disable dsp bypass
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set dsp bypass failed
@@ -1942,8 +1942,8 @@ uint8_t ov2640_set_dsp_bypass(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get dsp bypass status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dsp bypass failed
@@ -1955,8 +1955,8 @@ uint8_t ov2640_get_dsp_bypass(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable auto_mode
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set auto mode failed
@@ -1968,8 +1968,8 @@ uint8_t ov2640_set_auto_mode(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get auto mode status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get auto mode failed
@@ -1981,8 +1981,8 @@ uint8_t ov2640_get_auto_mode(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     set dvp pclk
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] pclk is the set pclk
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] pclk set pclk
  * @return    status code
  *            - 0 success
  *            - 1 set dvp pclk failed
@@ -1995,8 +1995,8 @@ uint8_t ov2640_set_dvp_pclk(ov2640_handle_t *handle, uint8_t pclk);
 
 /**
  * @brief      get dvp pclk
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *pclk points to a pclk buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *pclk pointer to a pclk buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dvp pclk failed
@@ -2008,8 +2008,8 @@ uint8_t ov2640_get_dvp_pclk(ov2640_handle_t *handle, uint8_t *pclk);
 
 /**
  * @brief     enable or disable dvp y8
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set dvp y8 failed
@@ -2021,8 +2021,8 @@ uint8_t ov2640_set_dvp_y8(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get dvp y8 status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dvp y8 failed
@@ -2034,8 +2034,8 @@ uint8_t ov2640_get_dvp_y8(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable jpeg output
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set jpeg output failed
@@ -2047,8 +2047,8 @@ uint8_t ov2640_set_jpeg_output(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get jpeg output status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get jpeg output failed
@@ -2060,8 +2060,8 @@ uint8_t ov2640_get_jpeg_output(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     set dvp output format
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] format is the dvp output format
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] format dvp output format
  * @return    status code
  *            - 0 success
  *            - 1 set dvp output format failed
@@ -2073,8 +2073,8 @@ uint8_t ov2640_set_dvp_output_format(ov2640_handle_t *handle, ov2640_dvp_output_
 
 /**
  * @brief      get dvp output format
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *format is the dvp output format
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *format pointer to a dvp output format buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dvp output format failed
@@ -2086,8 +2086,8 @@ uint8_t ov2640_get_dvp_output_format(ov2640_handle_t *handle, ov2640_dvp_output_
 
 /**
  * @brief     set dvp jpeg output href timing
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] timing is the href timing
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] timing href timing
  * @return    status code
  *            - 0 success
  *            - 1 set dvp jpeg output href timing failed
@@ -2099,8 +2099,8 @@ uint8_t ov2640_set_dvp_jpeg_output_href_timing(ov2640_handle_t *handle, ov2640_h
 
 /**
  * @brief      get dvp jpeg output href timing
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *timing points to a href timing buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *timing pointer to a href timing buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dvp jpeg output href timing failed
@@ -2112,8 +2112,8 @@ uint8_t ov2640_get_dvp_jpeg_output_href_timing(ov2640_handle_t *handle, ov2640_h
 
 /**
  * @brief     set byte swap
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] byte_swap is the byte swap
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] byte_swap byte swap
  * @return    status code
  *            - 0 success
  *            - 1 set byte swap failed
@@ -2125,8 +2125,8 @@ uint8_t ov2640_set_byte_swap(ov2640_handle_t *handle, ov2640_byte_swap_t byte_sw
 
 /**
  * @brief      get byte swap
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *byte_swap points to a byte swap buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *byte_swap pointer to a byte swap buffer
  * @return     status code
  *             - 0 success
  *             - 1 get byte swap failed
@@ -2138,9 +2138,9 @@ uint8_t ov2640_get_byte_swap(ov2640_handle_t *handle, ov2640_byte_swap_t *byte_s
 
 /**
  * @brief     enable or disable reset
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] type is the reset type
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] type reset type
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set reset failed
@@ -2152,9 +2152,9 @@ uint8_t ov2640_set_reset(ov2640_handle_t *handle, ov2640_reset_t type, ov2640_bo
 
 /**
  * @brief      get reset status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[in]  type is the reset type
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[in]  type reset type
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get reset failed
@@ -2166,8 +2166,8 @@ uint8_t ov2640_get_reset(ov2640_handle_t *handle, ov2640_reset_t type, ov2640_bo
 
 /**
  * @brief     set sccb master speed
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] speed is the sccb master speed
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] speed sccb master speed
  * @return    status code
  *            - 0 success
  *            - 1 set sccb master speed failed
@@ -2179,8 +2179,8 @@ uint8_t ov2640_set_sccb_master_speed(ov2640_handle_t *handle, uint8_t speed);
 
 /**
  * @brief      get sccb master speed
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *speed points to an sccb master speed buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *speed pointer to an sccb master speed buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sccb master speed failed
@@ -2192,8 +2192,8 @@ uint8_t ov2640_get_sccb_master_speed(ov2640_handle_t *handle, uint8_t *speed);
 
 /**
  * @brief     set sccb slave id
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] id is the set slave id
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] id set slave id
  * @return    status code
  *            - 0 success
  *            - 1 set sccb slave id failed
@@ -2205,8 +2205,8 @@ uint8_t ov2640_set_sccb_slave_id(ov2640_handle_t *handle, uint8_t id);
 
 /**
  * @brief      get sccb slave id
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *id points to a slave id buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *id pointer to a slave id buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sccb slave id failed
@@ -2218,8 +2218,8 @@ uint8_t ov2640_get_sccb_slave_id(ov2640_handle_t *handle, uint8_t *id);
 
 /**
  * @brief     enable or disable address auto increase
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set address auto increase failed
@@ -2231,8 +2231,8 @@ uint8_t ov2640_set_address_auto_increase(ov2640_handle_t *handle, ov2640_bool_t 
 
 /**
  * @brief      get address auto increase status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get address auto increase failed
@@ -2244,8 +2244,8 @@ uint8_t ov2640_get_address_auto_increase(ov2640_handle_t *handle, ov2640_bool_t 
 
 /**
  * @brief     enable or disable sccb
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set sccb failed
@@ -2257,8 +2257,8 @@ uint8_t ov2640_set_sccb(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get sccb status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sccb failed
@@ -2270,8 +2270,8 @@ uint8_t ov2640_get_sccb(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable sccb master clock delay
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set sccb master clock delay failed
@@ -2283,8 +2283,8 @@ uint8_t ov2640_set_sccb_master_clock_delay(ov2640_handle_t *handle, ov2640_bool_
 
 /**
  * @brief      get sccb master clock delay status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sccb master clock delay failed
@@ -2296,8 +2296,8 @@ uint8_t ov2640_get_sccb_master_clock_delay(ov2640_handle_t *handle, ov2640_bool_
 
 /**
  * @brief     enable or disable sccb master access
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set sccb master access failed
@@ -2309,8 +2309,8 @@ uint8_t ov2640_set_sccb_master_access(ov2640_handle_t *handle, ov2640_bool_t ena
 
 /**
  * @brief      get sccb master access status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sccb master access failed
@@ -2322,8 +2322,8 @@ uint8_t ov2640_get_sccb_master_access(ov2640_handle_t *handle, ov2640_bool_t *en
 
 /**
  * @brief     enable or disable sensor pass through access
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set sensor pass through access failed
@@ -2335,8 +2335,8 @@ uint8_t ov2640_set_sensor_pass_through_access(ov2640_handle_t *handle, ov2640_bo
 
 /**
  * @brief      get sensor pass through access status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sensor pass through access failed
@@ -2348,9 +2348,9 @@ uint8_t ov2640_get_sensor_pass_through_access(ov2640_handle_t *handle, ov2640_bo
 
 /**
  * @brief     enable or disable bist
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] bist is the bist type
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] bist bist type
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set bist failed
@@ -2362,9 +2362,9 @@ uint8_t ov2640_set_bist(ov2640_handle_t *handle, ov2640_bist_t bist, ov2640_bool
 
 /**
  * @brief      get bist status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[in]  bist is the bist type
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[in]  bist bist type
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get bist failed
@@ -2376,8 +2376,8 @@ uint8_t ov2640_get_bist(ov2640_handle_t *handle, ov2640_bist_t bist, ov2640_bool
 
 /**
  * @brief     set program memory pointer address
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] addr is the program memory pointer address
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] addr program memory pointer address
  * @return    status code
  *            - 0 success
  *            - 1 set program memory pointer address failed
@@ -2389,8 +2389,8 @@ uint8_t ov2640_set_program_memory_pointer_address(ov2640_handle_t *handle, uint1
 
 /**
  * @brief      get program memory pointer address
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *addr points to a program memory pointer address buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *addr pointer to a program memory pointer address buffer
  * @return     status code
  *             - 0 success
  *             - 1 get program memory pointer address failed
@@ -2402,8 +2402,8 @@ uint8_t ov2640_get_program_memory_pointer_address(ov2640_handle_t *handle, uint1
 
 /**
  * @brief     set program memory pointer access address
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] addr is the program memory pointer access address
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] addr program memory pointer access address
  * @return    status code
  *            - 0 success
  *            - 1 set program memory pointer access address failed
@@ -2415,8 +2415,8 @@ uint8_t ov2640_set_program_memory_pointer_access_address(ov2640_handle_t *handle
 
 /**
  * @brief      get program memory pointer access address
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *addr points to a program memory pointer access address buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *addr pointer to a program memory pointer access address buffer
  * @return     status code
  *             - 0 success
  *             - 1 get program memory pointer access address failed
@@ -2428,8 +2428,8 @@ uint8_t ov2640_get_program_memory_pointer_access_address(ov2640_handle_t *handle
 
 /**
  * @brief     set sccb protocol command
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] cmd is the sccb protocol command
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] cmd sccb protocol command
  * @return    status code
  *            - 0 success
  *            - 1 set sccb protocol command failed
@@ -2441,8 +2441,8 @@ uint8_t ov2640_set_sccb_protocol_command(ov2640_handle_t *handle, uint8_t cmd);
 
 /**
  * @brief      get sccb protocol command
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *cmd points to an sccb protocol command buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *cmd pointer to an sccb protocol command buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sccb protocol command failed
@@ -2454,8 +2454,8 @@ uint8_t ov2640_get_sccb_protocol_command(ov2640_handle_t *handle, uint8_t *cmd);
 
 /**
  * @brief     set sccb protocol status
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] status is the sccb protocol status
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] status sccb protocol status
  * @return    status code
  *            - 0 success
  *            - 1 set sccb protocol status failed
@@ -2467,8 +2467,8 @@ uint8_t ov2640_set_sccb_protocol_status(ov2640_handle_t *handle, uint8_t status)
 
 /**
  * @brief      get sccb protocol status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *status points to an sccb protocol status buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *status pointer to an sccb protocol status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sccb protocol status failed
@@ -2480,8 +2480,8 @@ uint8_t ov2640_get_sccb_protocol_status(ov2640_handle_t *handle, uint8_t *status
 
 /**
  * @brief     enable or disable cip
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set cip failed
@@ -2493,8 +2493,8 @@ uint8_t ov2640_set_cip(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get cip status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get cip failed
@@ -2506,8 +2506,8 @@ uint8_t ov2640_get_cip(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable dmy
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set dmy failed
@@ -2519,8 +2519,8 @@ uint8_t ov2640_set_dmy(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get dmy status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dmy failed
@@ -2532,8 +2532,8 @@ uint8_t ov2640_get_dmy(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable raw gma
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set raw gma failed
@@ -2545,8 +2545,8 @@ uint8_t ov2640_set_raw_gma(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get raw gma status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get raw gma failed
@@ -2558,8 +2558,8 @@ uint8_t ov2640_get_raw_gma(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable dg
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set dg failed
@@ -2571,8 +2571,8 @@ uint8_t ov2640_set_dg(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get dg status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dg failed
@@ -2584,8 +2584,8 @@ uint8_t ov2640_get_dg(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable awb
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set awb failed
@@ -2597,8 +2597,8 @@ uint8_t ov2640_set_awb(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get awb status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get awb failed
@@ -2610,8 +2610,8 @@ uint8_t ov2640_get_awb(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable awb gain
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set awb gain failed
@@ -2623,8 +2623,8 @@ uint8_t ov2640_set_awb_gain(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get awb gain status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get awb gain failed
@@ -2636,8 +2636,8 @@ uint8_t ov2640_get_awb_gain(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable lenc
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set lenc failed
@@ -2649,8 +2649,8 @@ uint8_t ov2640_set_lenc(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get lenc status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get lenc failed
@@ -2662,8 +2662,8 @@ uint8_t ov2640_get_lenc(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable pre
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set pre failed
@@ -2675,8 +2675,8 @@ uint8_t ov2640_set_pre(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get pre status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get pre failed
@@ -2688,8 +2688,8 @@ uint8_t ov2640_get_pre(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable aec enable
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set aec enable failed
@@ -2701,8 +2701,8 @@ uint8_t ov2640_set_aec_enable(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get aec enable status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get aec enable failed
@@ -2714,8 +2714,8 @@ uint8_t ov2640_get_aec_enable(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable aec sel
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set aec sel failed
@@ -2727,8 +2727,8 @@ uint8_t ov2640_set_aec_sel(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get aec sel status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get aec sel failed
@@ -2740,8 +2740,8 @@ uint8_t ov2640_get_aec_sel(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable stat sel
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set stat sel failed
@@ -2753,8 +2753,8 @@ uint8_t ov2640_set_stat_sel(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get stat sel status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get stat sel failed
@@ -2766,8 +2766,8 @@ uint8_t ov2640_get_stat_sel(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable vfirst
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set vfirst failed
@@ -2779,8 +2779,8 @@ uint8_t ov2640_set_vfirst(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get vfirst status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get vfirst failed
@@ -2792,8 +2792,8 @@ uint8_t ov2640_get_vfirst(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable yuv422
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set yuv422 failed
@@ -2805,8 +2805,8 @@ uint8_t ov2640_set_yuv422(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get yuv422 status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get yuv422 failed
@@ -2818,8 +2818,8 @@ uint8_t ov2640_get_yuv422(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable yuv
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set yuv failed
@@ -2831,8 +2831,8 @@ uint8_t ov2640_set_yuv(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get yuv status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get yuv failed
@@ -2844,8 +2844,8 @@ uint8_t ov2640_get_yuv(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable rgb
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set rgb failed
@@ -2857,8 +2857,8 @@ uint8_t ov2640_set_rgb(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get rgb status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get rgb failed
@@ -2870,8 +2870,8 @@ uint8_t ov2640_get_rgb(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable raw
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set raw failed
@@ -2883,8 +2883,8 @@ uint8_t ov2640_set_raw(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get raw status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get raw failed
@@ -2896,8 +2896,8 @@ uint8_t ov2640_get_raw(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable dcw
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set dcw failed
@@ -2909,8 +2909,8 @@ uint8_t ov2640_set_dcw(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get dcw status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dcw failed
@@ -2922,8 +2922,8 @@ uint8_t ov2640_get_dcw(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable sde
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set sde failed
@@ -2935,8 +2935,8 @@ uint8_t ov2640_set_sde(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get sde status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sde failed
@@ -2948,8 +2948,8 @@ uint8_t ov2640_get_sde(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable uv adj
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set uv adj failed
@@ -2961,8 +2961,8 @@ uint8_t ov2640_set_uv_adj(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get uv adj status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get uv adj failed
@@ -2974,8 +2974,8 @@ uint8_t ov2640_get_uv_adj(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable uv avg
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set uv avg failed
@@ -2987,8 +2987,8 @@ uint8_t ov2640_set_uv_avg(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get uv avg status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get uv avg failed
@@ -3000,8 +3000,8 @@ uint8_t ov2640_get_uv_avg(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable cmx
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set cmx failed
@@ -3013,8 +3013,8 @@ uint8_t ov2640_set_cmx(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get cmx status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get cmx failed
@@ -3026,8 +3026,8 @@ uint8_t ov2640_get_cmx(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable bpc
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set bpc failed
@@ -3039,8 +3039,8 @@ uint8_t ov2640_set_bpc(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get bpc status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get bpc failed
@@ -3052,8 +3052,8 @@ uint8_t ov2640_get_bpc(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable wpc
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set wpc failed
@@ -3065,8 +3065,8 @@ uint8_t ov2640_set_wpc(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get wpc status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get wpc failed
@@ -3078,8 +3078,8 @@ uint8_t ov2640_get_wpc(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     set sde indirect register address
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] addr is the set register address
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] addr set register address
  * @return    status code
  *            - 0 success
  *            - 1 set sde indirect register address failed
@@ -3091,8 +3091,8 @@ uint8_t ov2640_set_sde_indirect_register_address(ov2640_handle_t *handle, uint8_
 
 /**
  * @brief      get sde indirect register address
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *addr points to a register address buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *addr pointer to a register address buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sde indirect register address failed
@@ -3104,8 +3104,8 @@ uint8_t ov2640_get_sde_indirect_register_address(ov2640_handle_t *handle, uint8_
 
 /**
  * @brief     set sde indirect register data
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] data is the set data
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] data set data
  * @return    status code
  *            - 0 success
  *            - 1 set sde indirect register data failed
@@ -3117,8 +3117,8 @@ uint8_t ov2640_set_sde_indirect_register_data(ov2640_handle_t *handle, uint8_t d
 
 /**
  * @brief      get sde indirect register data
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *data points to a data buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *data pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sde indirect register data failed
@@ -3130,8 +3130,8 @@ uint8_t ov2640_get_sde_indirect_register_data(ov2640_handle_t *handle, uint8_t *
 
 /**
  * @brief     set image horizontal
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] size is the image horizontal size
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] size image horizontal size
  * @return    status code
  *            - 0 success
  *            - 1 set image horizontal failed
@@ -3144,8 +3144,8 @@ uint8_t ov2640_set_image_horizontal(ov2640_handle_t *handle, uint16_t size);
 
 /**
  * @brief      get image horizontal
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *size points to an image horizontal size buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *size pointer to an image horizontal size buffer
  * @return     status code
  *             - 0 success
  *             - 1 get image horizontal failed
@@ -3157,8 +3157,8 @@ uint8_t ov2640_get_image_horizontal(ov2640_handle_t *handle, uint16_t *size);
 
 /**
  * @brief     set image vertical
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] size is the image vertical size
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] size image vertical size
  * @return    status code
  *            - 0 success
  *            - 1 set image vertical failed
@@ -3171,8 +3171,8 @@ uint8_t ov2640_set_image_vertical(ov2640_handle_t *handle, uint16_t size);
 
 /**
  * @brief      get image vertical
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *size points to an image vertical size buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *size pointer to an image vertical size buffer
  * @return     status code
  *             - 0 success
  *             - 1 get image vertical failed
@@ -3184,8 +3184,8 @@ uint8_t ov2640_get_image_vertical(ov2640_handle_t *handle, uint16_t *size);
 
 /**
  * @brief     set quantization scale factor
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] factor is the set quantization scale factor
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] factor set quantization scale factor
  * @return    status code
  *            - 0 success
  *            - 1 set quantization scale factor failed
@@ -3197,8 +3197,8 @@ uint8_t ov2640_set_quantization_scale_factor(ov2640_handle_t *handle, uint8_t fa
 
 /**
  * @brief      get quantization scale factor
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *factor points to a quantization scale factor buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *factor pointer to a quantization scale factor buffer
  * @return     status code
  *             - 0 success
  *             - 1 get quantization scale factor failed
@@ -3210,8 +3210,8 @@ uint8_t ov2640_get_quantization_scale_factor(ov2640_handle_t *handle, uint8_t *f
 
 /**
  * @brief     enable or disable lp dp
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set lp dp failed
@@ -3223,8 +3223,8 @@ uint8_t ov2640_set_lp_dp(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get lp dp status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get lp dp failed
@@ -3236,8 +3236,8 @@ uint8_t ov2640_get_lp_dp(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     enable or disable round
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set round failed
@@ -3249,8 +3249,8 @@ uint8_t ov2640_set_round(ov2640_handle_t *handle, ov2640_bool_t enable);
 
 /**
  * @brief      get round status
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get round failed
@@ -3262,8 +3262,8 @@ uint8_t ov2640_get_round(ov2640_handle_t *handle, ov2640_bool_t *enable);
 
 /**
  * @brief     set vertical divider
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] divider is the set divider
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] divider set divider
  * @return    status code
  *            - 0 success
  *            - 1 set vertical divider failed
@@ -3276,8 +3276,8 @@ uint8_t ov2640_set_vertical_divider(ov2640_handle_t *handle, uint8_t divider);
 
 /**
  * @brief      get vertical divider
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *divider points to a divider buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *divider pointer to a divider buffer
  * @return     status code
  *             - 0 success
  *             - 1 get vertical divider failed
@@ -3289,8 +3289,8 @@ uint8_t ov2640_get_vertical_divider(ov2640_handle_t *handle, uint8_t *divider);
 
 /**
  * @brief     set horizontal divider
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] divider is the set divider
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] divider set divider
  * @return    status code
  *            - 0 success
  *            - 1 set horizontal divider failed
@@ -3303,8 +3303,8 @@ uint8_t ov2640_set_horizontal_divider(ov2640_handle_t *handle, uint8_t divider);
 
 /**
  * @brief      get horizontal divider
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *divider points to a divider buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *divider pointer to a divider buffer
  * @return     status code
  *             - 0 success
  *             - 1 get horizontal divider failed
@@ -3316,8 +3316,8 @@ uint8_t ov2640_get_horizontal_divider(ov2640_handle_t *handle, uint8_t *divider)
 
 /**
  * @brief     set horizontal size
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] size is the horizontal size
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] size horizontal size
  * @return    status code
  *            - 0 success
  *            - 1 set horizontal size failed
@@ -3330,8 +3330,8 @@ uint8_t ov2640_set_horizontal_size(ov2640_handle_t *handle, uint16_t size);
 
 /**
  * @brief      get horizontal size
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *size points to a horizontal size buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *size pointer to a horizontal size buffer
  * @return     status code
  *             - 0 success
  *             - 1 get horizontal size failed
@@ -3343,8 +3343,8 @@ uint8_t ov2640_get_horizontal_size(ov2640_handle_t *handle, uint16_t *size);
 
 /**
  * @brief     set vertical size
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] size is the vertical size
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] size vertical size
  * @return    status code
  *            - 0 success
  *            - 1 set vertical size failed
@@ -3357,8 +3357,8 @@ uint8_t ov2640_set_vertical_size(ov2640_handle_t *handle, uint16_t size);
 
 /**
  * @brief      get vertical size
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *size points to a vertical size buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *size pointer to a vertical size buffer
  * @return     status code
  *             - 0 success
  *             - 1 get vertical size failed
@@ -3370,8 +3370,8 @@ uint8_t ov2640_get_vertical_size(ov2640_handle_t *handle, uint16_t *size);
 
 /**
  * @brief     set offset x
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] size is the set offset x size
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] size set offset x size
  * @return    status code
  *            - 0 success
  *            - 1 set offset x failed
@@ -3384,8 +3384,8 @@ uint8_t ov2640_set_offset_x(ov2640_handle_t *handle, uint16_t size);
 
 /**
  * @brief      get offset x
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *size points to a set offset x size buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *size pointer to a set offset x size buffer
  * @return     status code
  *             - 0 success
  *             - 1 get offset x failed
@@ -3397,8 +3397,8 @@ uint8_t ov2640_get_offset_x(ov2640_handle_t *handle, uint16_t *size);
 
 /**
  * @brief     set offset y
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] size is the set offset y size
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] size set offset y size
  * @return    status code
  *            - 0 success
  *            - 1 set offset y failed
@@ -3411,8 +3411,8 @@ uint8_t ov2640_set_offset_y(ov2640_handle_t *handle, uint16_t size);
 
 /**
  * @brief      get offset y
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *size points to a set offset y size buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *size pointer to a set offset y size buffer
  * @return     status code
  *             - 0 success
  *             - 1 get offset y failed
@@ -3424,8 +3424,8 @@ uint8_t ov2640_get_offset_y(ov2640_handle_t *handle, uint16_t *size);
 
 /**
  * @brief     set dp selx
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] size is the set dp selx size
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] size set dp selx size
  * @return    status code
  *            - 0 success
  *            - 1 set dp selx failed
@@ -3438,8 +3438,8 @@ uint8_t ov2640_set_dp_selx(ov2640_handle_t *handle, uint8_t size);
 
 /**
  * @brief      get dp selx
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *size points to a set dp selx size buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *size pointer to a set dp selx size buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dp selx failed
@@ -3451,8 +3451,8 @@ uint8_t ov2640_get_dp_selx(ov2640_handle_t *handle, uint8_t *size);
 
 /**
  * @brief     set dp sely
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] size is the set dp sely size
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] size set dp sely size
  * @return    status code
  *            - 0 success
  *            - 1 set dp sely failed
@@ -3465,8 +3465,8 @@ uint8_t ov2640_set_dp_sely(ov2640_handle_t *handle, uint8_t size);
 
 /**
  * @brief      get dp sely
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *size points to a set dp sely size buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *size pointer to a set dp sely size buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dp sely failed
@@ -3478,8 +3478,8 @@ uint8_t ov2640_get_dp_sely(ov2640_handle_t *handle, uint8_t *size);
 
 /**
  * @brief     set output width
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] size is the set output width
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] size set output width
  * @return    status code
  *            - 0 success
  *            - 1 set output width failed
@@ -3492,8 +3492,8 @@ uint8_t ov2640_set_output_width(ov2640_handle_t *handle, uint16_t size);
 
 /**
  * @brief      get output width
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *size points to an output width buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *size pointer to an output width buffer
  * @return     status code
  *             - 0 success
  *             - 1 get output width failed
@@ -3505,8 +3505,8 @@ uint8_t ov2640_get_output_width(ov2640_handle_t *handle, uint16_t *size);
 
 /**
  * @brief     set output height
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] size is the set output height
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] size set output height
  * @return    status code
  *            - 0 success
  *            - 1 set output height failed
@@ -3519,8 +3519,8 @@ uint8_t ov2640_set_output_height(ov2640_handle_t *handle, uint16_t size);
 
 /**
  * @brief      get output height
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *size points to an output height buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *size pointer to an output height buffer
  * @return     status code
  *             - 0 success
  *             - 1 get output height failed
@@ -3532,8 +3532,8 @@ uint8_t ov2640_get_output_height(ov2640_handle_t *handle, uint16_t *size);
 
 /**
  * @brief     set zoom speed
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] speed is the zoom speed
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] speed zoom speed
  * @return    status code
  *            - 0 success
  *            - 1 set zoom speed failed
@@ -3546,8 +3546,8 @@ uint8_t ov2640_set_zoom_speed(ov2640_handle_t *handle, uint8_t speed);
 
 /**
  * @brief      get zoom speed
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[out] *speed points to a zoom speed buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[out] *speed pointer to a zoom speed buffer
  * @return     status code
  *             - 0 success
  *             - 1 get zoom speed failed
@@ -3570,8 +3570,8 @@ uint8_t ov2640_get_zoom_speed(ov2640_handle_t *handle, uint8_t *speed);
 
 /**
  * @brief     set light mode
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] mode is the light mode
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] mode light mode
  * @return    status code
  *            - 0 success
  *            - 1 set light mode failed
@@ -3583,8 +3583,8 @@ uint8_t ov2640_set_light_mode(ov2640_handle_t *handle, ov2640_light_mode_t mode)
 
 /**
  * @brief     set color saturation
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] color saturation is the color saturation
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] color color saturation
  * @return    status code
  *            - 0 success
  *            - 1 set color saturation failed
@@ -3596,8 +3596,8 @@ uint8_t ov2640_set_color_saturation(ov2640_handle_t *handle, ov2640_color_satura
 
 /**
  * @brief     set brightness
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] brightness is the set brightness
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] brightness set brightness
  * @return    status code
  *            - 0 success
  *            - 1 set brightness failed
@@ -3609,8 +3609,8 @@ uint8_t ov2640_set_brightness(ov2640_handle_t *handle, ov2640_brightness_t brigh
 
 /**
  * @brief     set contrast
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] contrast is the set contrast
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] contrast set contrast
  * @return    status code
  *            - 0 success
  *            - 1 set contrast failed
@@ -3622,8 +3622,8 @@ uint8_t ov2640_set_contrast(ov2640_handle_t *handle, ov2640_contrast_t contrast)
 
 /**
  * @brief     set special effect
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] effect is the special effect
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] effect special effect
  * @return    status code
  *            - 0 success
  *            - 1 set special effect failed
@@ -3646,9 +3646,9 @@ uint8_t ov2640_set_special_effect(ov2640_handle_t *handle, ov2640_special_effect
 
 /**
  * @brief     set dsp reg
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] reg is the register address
- * @param[in] data is the set data
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] reg register address
+ * @param[in] data set data
  * @return    status code
  *            - 0 success
  *            - 1 set dsp failed
@@ -3660,9 +3660,9 @@ uint8_t ov2640_set_dsp_reg(ov2640_handle_t *handle, uint8_t reg, uint8_t data);
 
 /**
  * @brief      get dsp reg
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[in]  reg is the register address
- * @param[out] *data points to a data buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[in]  reg register address
+ * @param[out] *data pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 get dsp failed
@@ -3674,9 +3674,9 @@ uint8_t ov2640_get_dsp_reg(ov2640_handle_t *handle, uint8_t reg, uint8_t *data);
 
 /**
  * @brief     set sensor reg
- * @param[in] *handle points to an ov2640 handle structure
- * @param[in] reg is the register address
- * @param[in] data is the set data
+ * @param[in] *handle pointer to an ov2640 handle structure
+ * @param[in] reg register address
+ * @param[in] data set data
  * @return    status code
  *            - 0 success
  *            - 1 set sensor failed
@@ -3688,9 +3688,9 @@ uint8_t ov2640_set_sensor_reg(ov2640_handle_t *handle, uint8_t reg, uint8_t data
 
 /**
  * @brief      get sensor reg
- * @param[in]  *handle points to an ov2640 handle structure
- * @param[in]  reg is the register address
- * @param[out] *data points to a data buffer
+ * @param[in]  *handle pointer to an ov2640 handle structure
+ * @param[in]  reg register address
+ * @param[out] *data pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 get sensor failed

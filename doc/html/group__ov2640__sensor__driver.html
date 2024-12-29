@@ -888,7 +888,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -936,8 +936,8 @@ Functions</h2></td></tr>
 <p>get 16 zone average weight option </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*avg</td><td>points to an avg buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*avg</td><td>pointer to an avg buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -983,8 +983,8 @@ Functions</h2></td></tr>
 <p>get 50hz banding aec </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*aec</td><td>points to an aec buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*aec</td><td>pointer to an aec buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1030,8 +1030,8 @@ Functions</h2></td></tr>
 <p>get 60hz banding aec </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*aec</td><td>points to an aec buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*aec</td><td>pointer to an aec buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1077,8 +1077,8 @@ Functions</h2></td></tr>
 <p>get aec </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*aec</td><td>points to an aec buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*aec</td><td>pointer to an aec buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1124,8 +1124,8 @@ Functions</h2></td></tr>
 <p>get agc control </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*control</td><td>points to a control buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*control</td><td>pointer to a control buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1171,8 +1171,8 @@ Functions</h2></td></tr>
 <p>get agc gain </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*gain</td><td>points to a gain buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*gain</td><td>pointer to a gain buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1218,8 +1218,8 @@ Functions</h2></td></tr>
 <p>get agc </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*agc</td><td>points to an agc buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*agc</td><td>pointer to an agc buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1265,8 +1265,8 @@ Functions</h2></td></tr>
 <p>get auto band status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1312,8 +1312,8 @@ Functions</h2></td></tr>
 <p>get band </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*band</td><td>points to a band buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*band</td><td>pointer to a band buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1359,8 +1359,8 @@ Functions</h2></td></tr>
 <p>get band filter status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1406,8 +1406,8 @@ Functions</h2></td></tr>
 <p>get chsync href swap status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1453,8 +1453,8 @@ Functions</h2></td></tr>
 <p>get clock divider </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*divider</td><td>points to a divider buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*divider</td><td>pointer to a divider buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1500,8 +1500,8 @@ Functions</h2></td></tr>
 <p>get clock output power down pin status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a pin status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a pin status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1547,8 +1547,8 @@ Functions</h2></td></tr>
 <p>get clock rate double status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1594,8 +1594,8 @@ Functions</h2></td></tr>
 <p>get color bar test status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1641,8 +1641,8 @@ Functions</h2></td></tr>
 <p>get dummy frame </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*frame</td><td>points to a frame buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*frame</td><td>pointer to a frame buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1688,8 +1688,8 @@ Functions</h2></td></tr>
 <p>get exposure control </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*control</td><td>points to a control buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*control</td><td>pointer to a control buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1741,9 +1741,9 @@ Functions</h2></td></tr>
 <p>get fast mode large step range </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*high_threshold</td><td>points to a high threshold buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*low_threshold</td><td>points to a low threshold buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*high_threshold</td><td>pointer to a high threshold buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*low_threshold</td><td>pointer to a low threshold buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1789,8 +1789,8 @@ Functions</h2></td></tr>
 <p>get flash light </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*control</td><td>points to a control buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*control</td><td>pointer to a control buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1836,8 +1836,8 @@ Functions</h2></td></tr>
 <p>get frame exposure pre charge row number </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*num</td><td>points to a pre charge row number buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*num</td><td>pointer to a pre charge row number buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1883,8 +1883,8 @@ Functions</h2></td></tr>
 <p>get frame length adjustment </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*frame</td><td>points to a frame buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*frame</td><td>pointer to a frame buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1930,8 +1930,8 @@ Functions</h2></td></tr>
 <p>get histogram algorithm high level </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*level</td><td>points to a high level buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*level</td><td>pointer to a high level buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1977,8 +1977,8 @@ Functions</h2></td></tr>
 <p>get histogram algorithm low level </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*level</td><td>points to a low level buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*level</td><td>pointer to a low level buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2024,8 +2024,8 @@ Functions</h2></td></tr>
 <p>get horizontal mirror status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2071,8 +2071,8 @@ Functions</h2></td></tr>
 <p>get horizontal window end </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*end</td><td>points to a horizontal window end buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*end</td><td>pointer to a horizontal window end buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2118,8 +2118,8 @@ Functions</h2></td></tr>
 <p>get horizontal window start </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*start</td><td>points to a horizontal window start buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*start</td><td>pointer to a horizontal window start buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2165,8 +2165,8 @@ Functions</h2></td></tr>
 <p>get href chsync swap status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2212,8 +2212,8 @@ Functions</h2></td></tr>
 <p>get href polarity </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*polarity</td><td>points to a polarity buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*polarity</td><td>pointer to a polarity buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2259,8 +2259,8 @@ Functions</h2></td></tr>
 <p>get hsync polarity </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*polarity</td><td>points to a polarity buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*polarity</td><td>pointer to a polarity buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2306,8 +2306,8 @@ Functions</h2></td></tr>
 <p>get hsync position and width end point </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*position</td><td>points to a position buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*position</td><td>pointer to a position buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2353,8 +2353,8 @@ Functions</h2></td></tr>
 <p>get hsync position and width start point </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*position</td><td>points to a position buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*position</td><td>pointer to a position buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2400,8 +2400,8 @@ Functions</h2></td></tr>
 <p>get line interval adjust </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*adjust</td><td>points to a line interval adjust buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*adjust</td><td>pointer to a line interval adjust buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2447,8 +2447,8 @@ Functions</h2></td></tr>
 <p>get live video after snapshot status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2494,8 +2494,8 @@ Functions</h2></td></tr>
 <p>get luminance average </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*average</td><td>points to a luminance average buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*average</td><td>pointer to a luminance average buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2541,8 +2541,8 @@ Functions</h2></td></tr>
 <p>get luminance signal high range </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*range</td><td>points to a range buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*range</td><td>pointer to a range buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2588,8 +2588,8 @@ Functions</h2></td></tr>
 <p>get luminance signal low range </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*range</td><td>points to a range buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*range</td><td>pointer to a range buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2635,8 +2635,8 @@ Functions</h2></td></tr>
 <p>get mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*mode</td><td>points to a mode buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*mode</td><td>pointer to a mode buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2682,8 +2682,8 @@ Functions</h2></td></tr>
 <p>get output drive </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*select</td><td>points to an output drive buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*select</td><td>pointer to an output drive buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2729,8 +2729,8 @@ Functions</h2></td></tr>
 <p>get pclk </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*pclk</td><td>points to a pclk buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*pclk</td><td>pointer to a pclk buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2776,8 +2776,8 @@ Functions</h2></td></tr>
 <p>get pclk edge </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*edge</td><td>points to an edge buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*edge</td><td>pointer to an edge buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2823,8 +2823,8 @@ Functions</h2></td></tr>
 <p>get pclk output qualified by href status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2870,8 +2870,8 @@ Functions</h2></td></tr>
 <p>get power reset pin remap status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2917,8 +2917,8 @@ Functions</h2></td></tr>
 <p>get resolution </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*resolution</td><td>points to a resolution buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*resolution</td><td>pointer to a resolution buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2964,8 +2964,8 @@ Functions</h2></td></tr>
 <p>get vertical flip status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3011,8 +3011,8 @@ Functions</h2></td></tr>
 <p>get vertical window line end </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*end</td><td>points to an end buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*end</td><td>pointer to an end buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3058,8 +3058,8 @@ Functions</h2></td></tr>
 <p>get vertical window line start </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*start</td><td>points to a start buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*start</td><td>pointer to a start buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3105,8 +3105,8 @@ Functions</h2></td></tr>
 <p>get vsync polarity </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*polarity</td><td>points to a polarity buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*polarity</td><td>pointer to a polarity buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3152,8 +3152,8 @@ Functions</h2></td></tr>
 <p>get vsync pulse width </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*width</td><td>points to a width buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*width</td><td>pointer to a width buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3199,8 +3199,8 @@ Functions</h2></td></tr>
 <p>get zoom status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3246,8 +3246,8 @@ Functions</h2></td></tr>
 <p>get zoom mode vertical window start point </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*point</td><td>points to a point buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*point</td><td>pointer to a point buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3293,8 +3293,8 @@ Functions</h2></td></tr>
 <p>get zoom window horizontal start point status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3330,7 +3330,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to an ov2640 info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to an ov2640 info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -3364,7 +3364,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -3415,8 +3415,8 @@ Functions</h2></td></tr>
 <p>set 16 zone average weight option </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">avg</td><td>is the set avg </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">avg</td><td>set avg </td></tr>
   </table>
   </dd>
 </dl>
@@ -3462,8 +3462,8 @@ Functions</h2></td></tr>
 <p>set 50hz banding aec </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aec</td><td>is the set aec </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aec</td><td>set aec </td></tr>
   </table>
   </dd>
 </dl>
@@ -3510,8 +3510,8 @@ Functions</h2></td></tr>
 <p>set 60hz banding aec </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aec</td><td>is the set aec </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aec</td><td>set aec </td></tr>
   </table>
   </dd>
 </dl>
@@ -3558,8 +3558,8 @@ Functions</h2></td></tr>
 <p>set aec </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aec</td><td>is the set param </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aec</td><td>set param </td></tr>
   </table>
   </dd>
 </dl>
@@ -3605,8 +3605,8 @@ Functions</h2></td></tr>
 <p>set agc control </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">control</td><td>is the set control </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">control</td><td>set control </td></tr>
   </table>
   </dd>
 </dl>
@@ -3652,8 +3652,8 @@ Functions</h2></td></tr>
 <p>set agc gain </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>is the set gain </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>set gain </td></tr>
   </table>
   </dd>
 </dl>
@@ -3700,8 +3700,8 @@ Functions</h2></td></tr>
 <p>set agc </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">agc</td><td>is the set agc </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">agc</td><td>set agc </td></tr>
   </table>
   </dd>
 </dl>
@@ -3747,8 +3747,8 @@ Functions</h2></td></tr>
 <p>enable or disable auto band </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -3794,8 +3794,8 @@ Functions</h2></td></tr>
 <p>set band </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">band</td><td>is the set band </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">band</td><td>set band </td></tr>
   </table>
   </dd>
 </dl>
@@ -3841,8 +3841,8 @@ Functions</h2></td></tr>
 <p>enable or disable band filter </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -3888,8 +3888,8 @@ Functions</h2></td></tr>
 <p>enable or disable chsync href swap </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -3935,8 +3935,8 @@ Functions</h2></td></tr>
 <p>set clock divider </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">divider</td><td>is the set divider </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">divider</td><td>set divider </td></tr>
   </table>
   </dd>
 </dl>
@@ -3983,8 +3983,8 @@ Functions</h2></td></tr>
 <p>set clock output power down pin status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>is the set pin status </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>set pin status </td></tr>
   </table>
   </dd>
 </dl>
@@ -4030,8 +4030,8 @@ Functions</h2></td></tr>
 <p>enable or disable double clock rate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -4077,8 +4077,8 @@ Functions</h2></td></tr>
 <p>enable or disable color bar test </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -4124,8 +4124,8 @@ Functions</h2></td></tr>
 <p>set dummy frame </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>is the set frame </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>set frame </td></tr>
   </table>
   </dd>
 </dl>
@@ -4171,8 +4171,8 @@ Functions</h2></td></tr>
 <p>set exposure control </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">control</td><td>is the set control </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">control</td><td>set control </td></tr>
   </table>
   </dd>
 </dl>
@@ -4224,9 +4224,9 @@ Functions</h2></td></tr>
 <p>set fast mode large step range </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">high_threshold</td><td>is the set high threshold </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">low_threshold</td><td>is the set low threshold </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">high_threshold</td><td>set high threshold </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">low_threshold</td><td>set low threshold </td></tr>
   </table>
   </dd>
 </dl>
@@ -4274,8 +4274,8 @@ Functions</h2></td></tr>
 <p>set flash light </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">control</td><td>is the set control </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">control</td><td>set control </td></tr>
   </table>
   </dd>
 </dl>
@@ -4321,8 +4321,8 @@ Functions</h2></td></tr>
 <p>set frame exposure pre charge row number </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the pre charge row number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>pre charge row number </td></tr>
   </table>
   </dd>
 </dl>
@@ -4368,8 +4368,8 @@ Functions</h2></td></tr>
 <p>set frame length adjustment </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>is the set frame </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>set frame </td></tr>
   </table>
   </dd>
 </dl>
@@ -4416,8 +4416,8 @@ Functions</h2></td></tr>
 <p>set histogram algorithm high level </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>is the high level </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>high level </td></tr>
   </table>
   </dd>
 </dl>
@@ -4463,8 +4463,8 @@ Functions</h2></td></tr>
 <p>set histogram algorithm low level </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>is the low level </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>low level </td></tr>
   </table>
   </dd>
 </dl>
@@ -4510,8 +4510,8 @@ Functions</h2></td></tr>
 <p>enable or disable horizontal mirror </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -4557,8 +4557,8 @@ Functions</h2></td></tr>
 <p>set horizontal window end </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">end</td><td>is the horizontal window end </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">end</td><td>horizontal window end </td></tr>
   </table>
   </dd>
 </dl>
@@ -4605,8 +4605,8 @@ Functions</h2></td></tr>
 <p>set horizontal window start </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>is the horizontal window start </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>horizontal window start </td></tr>
   </table>
   </dd>
 </dl>
@@ -4653,8 +4653,8 @@ Functions</h2></td></tr>
 <p>enable or disable href chsync swap </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -4700,8 +4700,8 @@ Functions</h2></td></tr>
 <p>set href polarity </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>is the set polarity </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>set polarity </td></tr>
   </table>
   </dd>
 </dl>
@@ -4747,8 +4747,8 @@ Functions</h2></td></tr>
 <p>set hsync polarity </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>is the set polarity </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>set polarity </td></tr>
   </table>
   </dd>
 </dl>
@@ -4794,8 +4794,8 @@ Functions</h2></td></tr>
 <p>set hsync position and width end point </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>is the set position </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>set position </td></tr>
   </table>
   </dd>
 </dl>
@@ -4842,8 +4842,8 @@ Functions</h2></td></tr>
 <p>set hsync position and width start point </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>is the set position </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>set position </td></tr>
   </table>
   </dd>
 </dl>
@@ -4890,8 +4890,8 @@ Functions</h2></td></tr>
 <p>set line interval adjust </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">adjust</td><td>is the set line interval adjust </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adjust</td><td>set line interval adjust </td></tr>
   </table>
   </dd>
 </dl>
@@ -4938,8 +4938,8 @@ Functions</h2></td></tr>
 <p>enable or disable live video after snapshot </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -4985,8 +4985,8 @@ Functions</h2></td></tr>
 <p>set luminance average </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">average</td><td>is the luminance average </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">average</td><td>luminance average </td></tr>
   </table>
   </dd>
 </dl>
@@ -5032,8 +5032,8 @@ Functions</h2></td></tr>
 <p>set luminance signal high range </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>is the set range </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>set range </td></tr>
   </table>
   </dd>
 </dl>
@@ -5079,8 +5079,8 @@ Functions</h2></td></tr>
 <p>set luminance signal low range </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>is the set range </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">range</td><td>set range </td></tr>
   </table>
   </dd>
 </dl>
@@ -5126,8 +5126,8 @@ Functions</h2></td></tr>
 <p>set mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the set mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>set mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -5173,8 +5173,8 @@ Functions</h2></td></tr>
 <p>set output drive </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">select</td><td>is the output drive </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">select</td><td>output drive </td></tr>
   </table>
   </dd>
 </dl>
@@ -5220,8 +5220,8 @@ Functions</h2></td></tr>
 <p>set pclk </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pclk</td><td>is the set pclk </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pclk</td><td>set pclk </td></tr>
   </table>
   </dd>
 </dl>
@@ -5267,8 +5267,8 @@ Functions</h2></td></tr>
 <p>set pclk edge </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">edge</td><td>is the pclk edge </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">edge</td><td>pclk edge </td></tr>
   </table>
   </dd>
 </dl>
@@ -5314,8 +5314,8 @@ Functions</h2></td></tr>
 <p>enable or disable pclk output qualified by href </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -5361,8 +5361,8 @@ Functions</h2></td></tr>
 <p>enable or disable power reset pin remap </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -5408,8 +5408,8 @@ Functions</h2></td></tr>
 <p>set resolution </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>is the set resolution </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>set resolution </td></tr>
   </table>
   </dd>
 </dl>
@@ -5455,8 +5455,8 @@ Functions</h2></td></tr>
 <p>enable or disable vertical flip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -5502,8 +5502,8 @@ Functions</h2></td></tr>
 <p>set vertical window line end </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">end</td><td>is the set end </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">end</td><td>set end </td></tr>
   </table>
   </dd>
 </dl>
@@ -5550,8 +5550,8 @@ Functions</h2></td></tr>
 <p>set vertical window line start </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>is the set start </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start</td><td>set start </td></tr>
   </table>
   </dd>
 </dl>
@@ -5598,8 +5598,8 @@ Functions</h2></td></tr>
 <p>set vsync polarity </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>is the set polarity </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>set polarity </td></tr>
   </table>
   </dd>
 </dl>
@@ -5645,8 +5645,8 @@ Functions</h2></td></tr>
 <p>set vsync pulse width </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>is the set width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>set width </td></tr>
   </table>
   </dd>
 </dl>
@@ -5692,8 +5692,8 @@ Functions</h2></td></tr>
 <p>enable or disable zoom </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -5739,8 +5739,8 @@ Functions</h2></td></tr>
 <p>set zoom mode vertical window start point </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>is the set point </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">point</td><td>set point </td></tr>
   </table>
   </dd>
 </dl>
@@ -5787,8 +5787,8 @@ Functions</h2></td></tr>
 <p>enable or disable zoom window horizontal start point </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -5824,7 +5824,7 @@ Functions</h2></td></tr>
 <p>soft reset </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -5860,7 +5860,7 @@ Functions</h2></td></tr>
 <p>table init </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -5896,7 +5896,7 @@ Functions</h2></td></tr>
 <p>table jpeg init </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -5932,7 +5932,7 @@ Functions</h2></td></tr>
 <p>table rgb565 init </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an ov2640 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an ov2640 handle structure </td></tr>
   </table>
   </dd>
 </dl>

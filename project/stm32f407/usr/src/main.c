@@ -119,8 +119,8 @@ void a_jpeg_callback(void)
 
 /**
  * @brief     ov2640 full function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *            - 0 success
  *            - 1 run failed
