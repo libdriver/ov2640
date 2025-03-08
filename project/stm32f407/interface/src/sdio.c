@@ -112,9 +112,9 @@ uint8_t sdio_deinit(void)
 
 /**
  * @brief      sdio read
- * @param[in]  sector is the read first sector
- * @param[out] *buf points to a data buffer
- * @param[in]  cnt is the data length
+ * @param[in]  sector read first sector
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  cnt data length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -169,9 +169,9 @@ uint8_t sdio_read(uint32_t sector, uint8_t *buf, uint32_t cnt)
 
 /**
  * @brief     sdio write
- * @param[in] sector is the write first sector
- * @param[in] *buf points to a data buffer
- * @param[in] cnt is the data length
+ * @param[in] sector write first sector
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] cnt data length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -226,7 +226,7 @@ uint8_t sdio_write(uint32_t sector, uint8_t *buf, uint32_t cnt)
 
 /**
  * @brief  sdio get the tx dma handle
- * @return points to a tx dma handle
+ * @return pointer to a tx dma handle
  * @note   none
  */
 DMA_HandleTypeDef* sdio_get_tx_dma_handle(void)
@@ -236,7 +236,7 @@ DMA_HandleTypeDef* sdio_get_tx_dma_handle(void)
 
 /**
  * @brief  sdio get the rx dma handle
- * @return points to a rx dma handle
+ * @return pointer to a rx dma handle
  * @note   none
  */
 DMA_HandleTypeDef* sdio_get_rx_dma_handle(void)
@@ -246,7 +246,7 @@ DMA_HandleTypeDef* sdio_get_rx_dma_handle(void)
 
 /**
  * @brief  sdio get card info handle
- * @return points to a card info handle
+ * @return pointer to a card info handle
  * @note   none
  */
 HAL_SD_CardInfoTypeDef* sdio_get_card_info(void)
@@ -256,7 +256,7 @@ HAL_SD_CardInfoTypeDef* sdio_get_card_info(void)
 
 /**
  * @brief  sdio get sd handle
- * @return points to a sd handle
+ * @return pointer to a sd handle
  * @note   none
  */
 SD_HandleTypeDef* sdio_get_handle(void)
