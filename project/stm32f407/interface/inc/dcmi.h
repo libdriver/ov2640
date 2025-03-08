@@ -51,7 +51,7 @@
 
 /**
  * @brief     dcmi init
- * @param[in] jpeg_enable is a bool value
+ * @param[in] jpeg_enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -107,8 +107,8 @@ uint8_t dcmi_resume(void);
 
 /**
  * @brief     dcmi snapshot start 
- * @param[in] *buf points to a dcmi buffer
- * @param[in] size is the buffer size
+ * @param[in] *buf pointer to a dcmi buffer
+ * @param[in] size buffer size
  * @return    status code
  *            - 0 success
  *            - 1 start failed
@@ -118,8 +118,8 @@ uint8_t dcmi_snapshot_start(uint8_t *buf, uint32_t size);
 
 /**
  * @brief     dcmi continuous start 
- * @param[in] *buf points to a dcmi buffer
- * @param[in] size is the buffer size
+ * @param[in] *buf pointer to a dcmi buffer
+ * @param[in] size buffer size
  * @return    status code
  *            - 0 success
  *            - 1 start failed
@@ -129,14 +129,14 @@ uint8_t dcmi_continuous_start(uint8_t *buf, uint32_t size);
 
 /**
  * @brief  dcmi get the handle
- * @return points to a dcmi handle
+ * @return pointer to a dcmi handle
  * @note   none
  */
 DCMI_HandleTypeDef *dcmi_get_handle(void);
 
 /**
  * @brief  dcmi dma get the handle
- * @return points to a dcmi dma handle
+ * @return pointer to a dcmi dma handle
  * @note   none
  */
 DMA_HandleTypeDef *dcmi_get_dma_handle(void);

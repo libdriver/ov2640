@@ -1282,12 +1282,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_QQVGA:
         {
             /* 160 x 120 */
-            res = ov2640_set_output_width(&gs_handle, 160);
+            res = ov2640_set_output_width(&gs_handle, 160 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 120);
+            res = ov2640_set_output_height(&gs_handle, 120 / 4);
             if (res != 0)
             {
                 break;
@@ -1298,12 +1298,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_QCIF:
         {
             /* 176 x 144 */
-            res = ov2640_set_output_width(&gs_handle, 176);
+            res = ov2640_set_output_width(&gs_handle, 176 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 144);
+            res = ov2640_set_output_height(&gs_handle, 144 / 4);
             if (res != 0)
             {
                 break;
@@ -1314,12 +1314,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_QVGA:
         {
             /* 320 x 240 */
-            res = ov2640_set_output_width(&gs_handle, 320);
+            res = ov2640_set_output_width(&gs_handle, 320 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 240);
+            res = ov2640_set_output_height(&gs_handle, 240 / 4);
             if (res != 0)
             {
                 break;
@@ -1330,12 +1330,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_WQVGA:
         {
             /* 400 x 240 */
-            res = ov2640_set_output_width(&gs_handle, 400);
+            res = ov2640_set_output_width(&gs_handle, 400 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 240);
+            res = ov2640_set_output_height(&gs_handle, 240 / 4);
             if (res != 0)
             {
                 break;
@@ -1346,12 +1346,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_CIF:
         {
             /* 352 x 288 */
-            res = ov2640_set_output_width(&gs_handle, 352);
+            res = ov2640_set_output_width(&gs_handle, 352 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 288);
+            res = ov2640_set_output_height(&gs_handle, 288 / 4);
             if (res != 0)
             {
                 break;
@@ -1362,12 +1362,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_VGA:
         {
             /* 640 x 480 */
-            res = ov2640_set_output_width(&gs_handle, 640);
+            res = ov2640_set_output_width(&gs_handle, 640 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 480);
+            res = ov2640_set_output_height(&gs_handle, 480 / 4);
             if (res != 0)
             {
                 break;
@@ -1378,12 +1378,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_SVGA:
         {
             /* 800 x 600 */
-            res = ov2640_set_output_width(&gs_handle, 800);
+            res = ov2640_set_output_width(&gs_handle, 800 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 600);
+            res = ov2640_set_output_height(&gs_handle, 600 / 4);
             if (res != 0)
             {
                 break;
@@ -1394,12 +1394,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_XGA:
         {
             /* 1024 x 768 */
-            res = ov2640_set_output_width(&gs_handle, 1024);
+            res = ov2640_set_output_width(&gs_handle, 1024 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 768);
+            res = ov2640_set_output_height(&gs_handle, 768 / 4);
             if (res != 0)
             {
                 break;
@@ -1410,12 +1410,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_WXGA:
         {
             /* 1280 x 800 */
-            res = ov2640_set_output_width(&gs_handle, 1280);
+            res = ov2640_set_output_width(&gs_handle, 1280 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 800);
+            res = ov2640_set_output_height(&gs_handle, 800 / 4);
             if (res != 0)
             {
                 break;
@@ -1426,12 +1426,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_XVGA:
         {
             /* 1280 x 960 */
-            res = ov2640_set_output_width(&gs_handle, 1280);
+            res = ov2640_set_output_width(&gs_handle, 1280 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 960);
+            res = ov2640_set_output_height(&gs_handle, 960 / 4);
             if (res != 0)
             {
                 break;
@@ -1442,12 +1442,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_WXGA_PLUS:
         {
             /* 1440 x 900 */
-            res = ov2640_set_output_width(&gs_handle, 1440);
+            res = ov2640_set_output_width(&gs_handle, 1440 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 900);
+            res = ov2640_set_output_height(&gs_handle, 900 / 4);
             if (res != 0)
             {
                 break;
@@ -1458,12 +1458,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_SXGA:
         {
             /* 1280 x 1024 */
-            res = ov2640_set_output_width(&gs_handle, 1280);
+            res = ov2640_set_output_width(&gs_handle, 1280 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 1024);
+            res = ov2640_set_output_height(&gs_handle, 1024 / 4);
             if (res != 0)
             {
                 break;
@@ -1474,12 +1474,12 @@ uint8_t ov2640_basic_set_image_resolution(ov2640_image_resolution_t resolution)
         case OV2640_IMAGE_RESOLUTION_UXGA:
         {
             /* 1600 x 1200 */
-            res = ov2640_set_output_width(&gs_handle, 1600);
+            res = ov2640_set_output_width(&gs_handle, 1600 / 4);
             if (res != 0)
             {
                 break;
             }
-            res = ov2640_set_output_height(&gs_handle, 1200);
+            res = ov2640_set_output_height(&gs_handle, 1200 / 4);
             if (res != 0)
             {
                 break;
