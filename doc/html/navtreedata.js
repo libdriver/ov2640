@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "LibDriver OV2640", "index.html", [
-    [ "Modules", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -43,7 +43,7 @@ var NAVTREE =
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
   ] ]
@@ -52,11 +52,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__ov2640__dsp__driver.html#ga4ee9e9aaa38606427edcc9aade8c5853",
-"group__ov2640__dsp__driver.html#gaf98d4e7dab531a7147e2f52ea6a3805d",
-"group__ov2640__sensor__driver.html#ga184b306f8145d0f7fc0614696967986a",
-"group__ov2640__sensor__driver.html#gab7a6d08b13e250cd78bfcfaff921e6f9"
+"group__ov2640__dsp__driver.html#gace5761f90938fd396baad71c954153b0",
+"group__ov2640__sensor__driver.html#ga0c54b9ac675fc56e6a52b86bb1a179ab"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

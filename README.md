@@ -12,7 +12,7 @@ The OV2640 CAMERACHIP™ image sensor is a low voltage CMOS device that provides
 
 This product has an image array capable of operating at up to 15 frames per second (fps) in UXGA resolution with complete user control over image quality, formatting and output data transfer. All required image processing functions, including exposure control, gamma, white balance, color saturation, hue control, white pixel canceling, noise canceling, and more, are also programmable through the SCCB interface. The OV2640 also includes a compression engine for increased processing power. In addition, OmniVision CAMERACHIP sensors use proprietary sensor technology to improve image quality by reducing or eliminating common lighting/electrical sources of image contamination, such as fixed pattern noise, smearing, etc., to produce a clean, fully stable color image.
 
-LibDriver OV2640 is a full-featured driver of OV2640 launched by LibDriver.It provides image display, image capture, special effects settings and other functions. LibDriver is MISRA compliant.
+LibDriver OV2640 is a full-featured driver for OV2640, launched by LibDriver.It provides image display, image capture, special effects settings and additional features. LibDriver is MISRA compliant.
 
 ### Table of Contents
 

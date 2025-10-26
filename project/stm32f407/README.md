@@ -78,7 +78,7 @@ We use '\n' to wrap lines.If your serial port assistant displays exceptions (e.g
    ov2640 (-e display | --example=display) --time=<time>
    ```
 
-7. Run ov2640 photo function, path is the set pah.
+6. Run ov2640 photo function, path is the set pah.
 
    ```shell
    ov2640 (-e photo | --example=photo) [--path=<path>]
