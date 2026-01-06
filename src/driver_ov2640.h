@@ -99,7 +99,7 @@ typedef enum
  */
 typedef enum
 {
-    OV2640_PIN_STATUS_TRI_STATE = 0x00,        /**< tri state */
+    OV2640_PIN_STATUS_TRI_STATE  = 0x00,       /**< tri state */
     OV2640_PIN_STATUS_LAST_STATE = 0x01,       /**< last state */
 } ov2640_pin_status_t;
 
