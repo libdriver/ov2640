@@ -1,3 +1,9 @@
+## 1.0.8 (2026-03-31)
+
+## Bug Fixes
+
+- fix config buffer bug
+
 ## 1.0.7 (2026-01-07)
 
 ## Bug Fixes

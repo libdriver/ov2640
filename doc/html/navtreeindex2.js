@@ -1,10 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"group__ov2640__sensor__driver.html#ga0c54b9ac675fc56e6a52b86bb1a179ab":[0,0,1,9],
-"group__ov2640__sensor__driver.html#ga0db34e4f013883abba5bfeee4dcac8b2":[0,0,1,46],
-"group__ov2640__sensor__driver.html#ga131fc8d76543d3e8645b7bc32c0fe054":[0,0,1,22],
-"group__ov2640__sensor__driver.html#ga1580c13dd125b3e615e24c37c5118937":[0,0,1,50],
-"group__ov2640__sensor__driver.html#ga171fa9a10b49cf4e049bdc328d0b23b8":[0,0,1,98],
 "group__ov2640__sensor__driver.html#ga184b306f8145d0f7fc0614696967986a":[0,0,1,72],
 "group__ov2640__sensor__driver.html#ga1a0de0cd4a591d00302b59c6c3f87e64":[0,0,1,94],
 "group__ov2640__sensor__driver.html#ga202e2a04ebf98cf77a9bcf28c68eed16":[0,0,1,106],

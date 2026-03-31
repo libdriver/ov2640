@@ -147,14 +147,14 @@
 /**
  * @brief innter table globle definition
  */
-const uint8_t gsc_ov2640_init_table[][2];            /**< init register */
-const uint8_t gsc_ov2640_jpeg_init_table[][2];        /**< jpeg init register */
-const uint8_t gsc_ov2640_rgb565_init_table[][2];      /**< rgb565 init register */
+static const uint8_t gsc_ov2640_init_table[][2];            /**< init register */
+static const uint8_t gsc_ov2640_jpeg_init_table[][2];       /**< jpeg init register */
+static const uint8_t gsc_ov2640_rgb565_init_table[][2];     /**< rgb565 init register */
 
 /**
  * @brief init table definition
  */
-const uint8_t gsc_ov2640_init_table[][2] = 
+static const uint8_t gsc_ov2640_init_table[][2] = 
 {
     {0xFF, 0x00},
     {0x2C, 0xFF},
@@ -339,7 +339,7 @@ const uint8_t gsc_ov2640_init_table[][2] =
 /**
  * @brief jpeg init table definition
  */
-const uint8_t gsc_ov2640_jpeg_init_table[][2] = 
+static const uint8_t gsc_ov2640_jpeg_init_table[][2] = 
 {
     {0xFF, 0x00},
     {0xDA, 0x10},
@@ -361,7 +361,7 @@ const uint8_t gsc_ov2640_jpeg_init_table[][2] =
 /**
  * @brief rgb565 init table definition
  */
-const uint8_t gsc_ov2640_rgb565_init_table[][2] = 
+static const uint8_t gsc_ov2640_rgb565_init_table[][2] = 
 {
     {0xFF, 0x00},
     {0xDA, 0x09},

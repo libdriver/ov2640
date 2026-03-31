@@ -39,7 +39,6 @@ var NAVTREE =
       [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
-        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
@@ -52,8 +51,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__ov2640__dsp__driver.html#gace5761f90938fd396baad71c954153b0",
-"group__ov2640__sensor__driver.html#ga0c54b9ac675fc56e6a52b86bb1a179ab"
+"group__ov2640__dsp__driver.html#gad70a95cd015d52dc161f22155be220f2",
+"group__ov2640__sensor__driver.html#ga184b306f8145d0f7fc0614696967986a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

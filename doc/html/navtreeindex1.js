@@ -1,10 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"group__ov2640__dsp__driver.html#gace5761f90938fd396baad71c954153b0":[0,0,2,24],
-"group__ov2640__dsp__driver.html#gace9e84d451161261bddfebe20b5903a0":[0,0,2,65],
-"group__ov2640__dsp__driver.html#gad37887ee4a79bbc75432060e3d4e9b83":[0,0,2,14],
-"group__ov2640__dsp__driver.html#gad388f1b25983a1d0623e3c8cfcdb97ef":[0,0,2,19],
-"group__ov2640__dsp__driver.html#gad61de88a2dae0a4335236455fc4d95b5":[0,0,2,70],
 "group__ov2640__dsp__driver.html#gad70a95cd015d52dc161f22155be220f2":[0,0,2,114],
 "group__ov2640__dsp__driver.html#gade4a4da98a6d3633c7db18d101c46507":[0,0,2,12],
 "group__ov2640__dsp__driver.html#gae1a2f8c4d3654811c3aa35f7bce0b948":[0,0,2,27],
@@ -249,5 +244,10 @@ var NAVTREEINDEX1 =
 "group__ov2640__sensor__driver.html#ga06bd1ab81e813a979b9386ece460956e":[0,0,1,48],
 "group__ov2640__sensor__driver.html#ga06c01e10747e9d69d0409778889472ca":[0,0,1,51],
 "group__ov2640__sensor__driver.html#ga0a7335d022c1c7f2ed54f14ec2f297af":[0,0,1,124],
-"group__ov2640__sensor__driver.html#ga0b42ab74fb9bdbdc809cfc8bfb9e9a7e":[0,0,1,113]
+"group__ov2640__sensor__driver.html#ga0b42ab74fb9bdbdc809cfc8bfb9e9a7e":[0,0,1,113],
+"group__ov2640__sensor__driver.html#ga0c54b9ac675fc56e6a52b86bb1a179ab":[0,0,1,9],
+"group__ov2640__sensor__driver.html#ga0db34e4f013883abba5bfeee4dcac8b2":[0,0,1,46],
+"group__ov2640__sensor__driver.html#ga131fc8d76543d3e8645b7bc32c0fe054":[0,0,1,22],
+"group__ov2640__sensor__driver.html#ga1580c13dd125b3e615e24c37c5118937":[0,0,1,50],
+"group__ov2640__sensor__driver.html#ga171fa9a10b49cf4e049bdc328d0b23b8":[0,0,1,98]
 };

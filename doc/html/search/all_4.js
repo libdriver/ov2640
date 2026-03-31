@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gsc_5fov2640_5finit_5ftable_0',['gsc_ov2640_init_table',['../driver__ov2640_8c.html#a5dfdef59342a79ab667904e14470b169',1,'driver_ov2640.c']]],
-  ['gsc_5fov2640_5fjpeg_5finit_5ftable_1',['gsc_ov2640_jpeg_init_table',['../driver__ov2640_8c.html#a46ee86c165bb37c10ad493fd633ac084',1,'driver_ov2640.c']]],
-  ['gsc_5fov2640_5frgb565_5finit_5ftable_2',['gsc_ov2640_rgb565_init_table',['../driver__ov2640_8c.html#afd97ae67fbe2e2b57666991c8a891ece',1,'driver_ov2640.c']]]
+  ['inited_0',['inited',['../structov2640__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f',1,'ov2640_handle_s']]],
+  ['interface_1',['interface',['../structov2640__info__s.html#a5778305279cae46b2ecf862e97f73600',1,'ov2640_info_s']]],
+  ['interface_20driver_20function_2',['ov2640 interface driver function',['../group__ov2640__interface__driver.html',1,'']]]
 ];
