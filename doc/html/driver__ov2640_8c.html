@@ -691,15 +691,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaccef6cec9d4a3a6df0ce10b3171a2acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">set sensor reg  <br /></td></tr>
 <tr class="memitem:ga6464a0c654dde80c86bc453a5adc5721" id="r_ga6464a0c654dde80c86bc453a5adc5721"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ov2640__sensor__driver.html#ga6464a0c654dde80c86bc453a5adc5721">ov2640_info</a> (<a class="el" href="group__ov2640__sensor__driver.html#ga29abd03c4fe34e0202c1f09eac11af5b">ov2640_info_t</a> *info)</td></tr>
 <tr class="memdesc:ga6464a0c654dde80c86bc453a5adc5721"><td class="mdescLeft">&#160;</td><td class="mdescRight">get chip's information  <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a5dfdef59342a79ab667904e14470b169" id="r_a5dfdef59342a79ab667904e14470b169"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dfdef59342a79ab667904e14470b169">gsc_ov2640_init_table</a> [][2]</td></tr>
-<tr class="memdesc:a5dfdef59342a79ab667904e14470b169"><td class="mdescLeft">&#160;</td><td class="mdescRight">innter table globle definition  <br /></td></tr>
-<tr class="memitem:a46ee86c165bb37c10ad493fd633ac084" id="r_a46ee86c165bb37c10ad493fd633ac084"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46ee86c165bb37c10ad493fd633ac084">gsc_ov2640_jpeg_init_table</a> [][2]</td></tr>
-<tr class="memdesc:a46ee86c165bb37c10ad493fd633ac084"><td class="mdescLeft">&#160;</td><td class="mdescRight">jpeg init table definition  <br /></td></tr>
-<tr class="memitem:afd97ae67fbe2e2b57666991c8a891ece" id="r_afd97ae67fbe2e2b57666991c8a891ece"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd97ae67fbe2e2b57666991c8a891ece">gsc_ov2640_rgb565_init_table</a> [][2]</td></tr>
-<tr class="memdesc:afd97ae67fbe2e2b57666991c8a891ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">rgb565 init table definition  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>driver ov2640 source file </p>
@@ -2290,100 +2281,6 @@ Variables</h2></td></tr>
 <p>chip min operating temperature </p>
 
 <p class="definition">Definition at line <a class="el" href="driver__ov2640_8c_source.html#l00047">47</a> of file <a class="el" href="driver__ov2640_8c_source.html">driver_ov2640.c</a>.</p>
-
-</div>
-</div>
-<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
-<a id="a5dfdef59342a79ab667904e14470b169" name="a5dfdef59342a79ab667904e14470b169"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dfdef59342a79ab667904e14470b169">&#9670;&#160;</a></span>gsc_ov2640_init_table</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t gsc_ov2640_init_table</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>innter table globle definition </p>
-<p>init table definition</p>
-<p>init register </p>
-
-<p class="definition">Definition at line <a class="el" href="driver__ov2640_8c_source.html#l00150">150</a> of file <a class="el" href="driver__ov2640_8c_source.html">driver_ov2640.c</a>.</p>
-
-</div>
-</div>
-<a id="a46ee86c165bb37c10ad493fd633ac084" name="a46ee86c165bb37c10ad493fd633ac084"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46ee86c165bb37c10ad493fd633ac084">&#9670;&#160;</a></span>gsc_ov2640_jpeg_init_table</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t gsc_ov2640_jpeg_init_table</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= </div>
-<div class="line">{</div>
-<div class="line">    {0xFF, 0x00},</div>
-<div class="line">    {0xDA, 0x10},</div>
-<div class="line">    {0xD7, 0x03},</div>
-<div class="line">    {0xDF, 0x00},</div>
-<div class="line">    {0x33, 0x80},</div>
-<div class="line">    {0x3C, 0x40},</div>
-<div class="line">    {0xE1, 0x77},</div>
-<div class="line">    {0x00, 0x00},</div>
-<div class="line">    {0xFF, 0x01},</div>
-<div class="line">    {0xE0, 0x14},</div>
-<div class="line">    {0xE1, 0x77},</div>
-<div class="line">    {0xE5, 0x1F},</div>
-<div class="line">    {0xD7, 0x03},</div>
-<div class="line">    {0xDA, 0x10},</div>
-<div class="line">    {0xE0, 0x00},</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-<p>jpeg init table definition </p>
-<p>jpeg init register </p>
-
-<p class="definition">Definition at line <a class="el" href="driver__ov2640_8c_source.html#l00151">151</a> of file <a class="el" href="driver__ov2640_8c_source.html">driver_ov2640.c</a>.</p>
-
-</div>
-</div>
-<a id="afd97ae67fbe2e2b57666991c8a891ece" name="afd97ae67fbe2e2b57666991c8a891ece"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd97ae67fbe2e2b57666991c8a891ece">&#9670;&#160;</a></span>gsc_ov2640_rgb565_init_table</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint8_t gsc_ov2640_rgb565_init_table</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= </div>
-<div class="line">{</div>
-<div class="line">    {0xFF, 0x00},</div>
-<div class="line">    {0xDA, 0x09},</div>
-<div class="line">    {0xD7, 0x03},</div>
-<div class="line">    {0xDF, 0x02},</div>
-<div class="line">    {0x33, 0xA0},</div>
-<div class="line">    {0x3C, 0x00},</div>
-<div class="line">    {0xE1, 0x67},</div>
-<div class="line">    {0xFF, 0x01},</div>
-<div class="line">    {0xE0, 0x00},</div>
-<div class="line">    {0xE1, 0x00},</div>
-<div class="line">    {0xE5, 0x00},</div>
-<div class="line">    {0xD7, 0x00},</div>
-<div class="line">    {0xDA, 0x00},</div>
-<div class="line">    {0xE0, 0x00},</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-<p>rgb565 init table definition </p>
-<p>rgb565 init register </p>
-
-<p class="definition">Definition at line <a class="el" href="driver__ov2640_8c_source.html#l00152">152</a> of file <a class="el" href="driver__ov2640_8c_source.html">driver_ov2640.c</a>.</p>
 
 </div>
 </div>

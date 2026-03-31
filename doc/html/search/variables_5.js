@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['power_5fdown_5fdeinit_0',['power_down_deinit',['../structov2640__handle__s.html#af505d4e8fd6e198fa5a6b26804edb5ac',1,'ov2640_handle_s']]],
-  ['power_5fdown_5finit_1',['power_down_init',['../structov2640__handle__s.html#a14d073bd09a5ab87fd5b53fd6aff2890',1,'ov2640_handle_s']]],
-  ['power_5fdown_5fwrite_2',['power_down_write',['../structov2640__handle__s.html#a7a1ee6b1f94b61389742c7f411c61d1c',1,'ov2640_handle_s']]]
+  ['reset_5fdeinit_0',['reset_deinit',['../structov2640__handle__s.html#a98bf6e62259d249c32e0f7f242abbe2b',1,'ov2640_handle_s']]],
+  ['reset_5finit_1',['reset_init',['../structov2640__handle__s.html#aa617a962611cc378c8847a5a9d37251e',1,'ov2640_handle_s']]],
+  ['reset_5fwrite_2',['reset_write',['../structov2640__handle__s.html#a54b3d389a41cdbaca6dc4524e7c7a6c9',1,'ov2640_handle_s']]]
 ];

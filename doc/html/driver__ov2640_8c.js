@@ -333,8 +333,5 @@ var driver__ov2640_8c =
     [ "ov2640_soft_reset", "group__ov2640__sensor__driver.html#gae213391e11b311c35b93137b7a9ccec9", null ],
     [ "ov2640_table_init", "group__ov2640__sensor__driver.html#ga2de8c6265e6f552870c67233fe07a3e2", null ],
     [ "ov2640_table_jpeg_init", "group__ov2640__sensor__driver.html#ga044814955d659ecef0b3f41d087c42f7", null ],
-    [ "ov2640_table_rgb565_init", "group__ov2640__sensor__driver.html#ga0a7335d022c1c7f2ed54f14ec2f297af", null ],
-    [ "gsc_ov2640_init_table", "driver__ov2640_8c.html#a5dfdef59342a79ab667904e14470b169", null ],
-    [ "gsc_ov2640_jpeg_init_table", "driver__ov2640_8c.html#a46ee86c165bb37c10ad493fd633ac084", null ],
-    [ "gsc_ov2640_rgb565_init_table", "driver__ov2640_8c.html#afd97ae67fbe2e2b57666991c8a891ece", null ]
+    [ "ov2640_table_rgb565_init", "group__ov2640__sensor__driver.html#ga0a7335d022c1c7f2ed54f14ec2f297af", null ]
 ];
