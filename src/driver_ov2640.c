@@ -745,7 +745,7 @@ uint8_t ov2640_init(ov2640_handle_t *handle)
         return 8;                                                                  /* return error */
     }
     id |= reg;                                                                     /* set lsb */
-    if (id != 0X2642)                                                              /* check id */
+    if ((id & 0xFFF0) != 0x2640)                                                   /* check id */
     {
         handle->debug_print("ov2640: product id is invalid.\n");                   /* product id is invalid */
         (void)handle->sccb_deinit();                                               /* sccb deinit */
