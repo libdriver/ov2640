@@ -1,3 +1,9 @@
+## 1.0.10 (2026-10-25)
+
+## Bug Fixes
+
+- fix config bugs
+
 ## 1.0.9 (2026-07-05)
 
 ## Bug Fixes

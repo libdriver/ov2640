@@ -2158,7 +2158,7 @@ uint8_t ov2640_set_live_video_after_snapshot(ov2640_handle_t *handle, ov2640_boo
         return 1;                                                                /* return error */
     }
     prev &= ~(1 << 0);                                                           /* clear settings */
-    prev |= enable << 0;                                                         /* set bool */
+    prev |= (!enable) << 0;                                                      /* set bool */
     res = a_ov2640_sensor_write(handle, OV2640_REG_SENSOR_BANK_COM3, prev);      /* write com3 */
     if (res != 0)                                                                /* check result */
     {
@@ -2202,7 +2202,7 @@ uint8_t ov2640_get_live_video_after_snapshot(ov2640_handle_t *handle, ov2640_boo
         
         return 1;                                                                /* return error */
     }
-    *enable = (ov2640_bool_t)((prev >> 0) & 0x01);                               /* get bool */
+    *enable = (ov2640_bool_t)(!((prev >> 0) & 0x01));                            /* get bool */
     
     return 0;                                                                    /* success return 0 */
 }
@@ -4750,7 +4750,6 @@ uint8_t ov2640_get_zoom_window_horizontal_start_point(ov2640_handle_t *handle, o
  *            - 1 set frame length adjustment failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- *            - 4 frame > 0x3FF
  * @note      none
  */
 uint8_t ov2640_set_frame_length_adjustment(ov2640_handle_t *handle, uint16_t frame)
@@ -4765,12 +4764,6 @@ uint8_t ov2640_set_frame_length_adjustment(ov2640_handle_t *handle, uint16_t fra
     if (handle->inited != 1)                                                      /* check handle initialization */
     {
         return 3;                                                                 /* return error */
-    }
-    if (frame > 0x3FF)                                                            /* check frame */
-    {
-        handle->debug_print("ov2640: frame > 0x3FF.\n");                          /* frame > 0x3FF */
-        
-        return 4;                                                                 /* return error */
     }
     
     prev = frame & 0xFF;                                                          /* set frame lsb */
@@ -10778,7 +10771,7 @@ uint8_t ov2640_get_zoom_speed(ov2640_handle_t *handle, uint8_t *speed)
         
         return 1;                                                             /* return error */
     }
-    *speed = (prev >> 4) & 0xFF;                                              /* get speed */
+    *speed = (prev >> 4) & 0x0F;                                              /* get speed */
     
     return 0;                                                                 /* success return 0 */
 }
