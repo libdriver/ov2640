@@ -171,8 +171,8 @@ typedef enum
 typedef enum
 {
     OV2640_PCLK_NO_EFFECT = 0x00,        /**< no effect */
-    OV2640_PCLK_DIVIDE_2  = 0x01,        /**< divide by 2 */
-    OV2640_PCLK_DIVIDE_4  = 0x02,        /**< divide by 4 */
+    OV2640_PCLK_DIVIDE_2  = 0x02,        /**< divide by 2 */
+    OV2640_PCLK_DIVIDE_4  = 0x03,        /**< divide by 4 */
 } ov2640_pclk_t;
 
 /**
@@ -1713,7 +1713,6 @@ uint8_t ov2640_get_zoom_window_horizontal_start_point(ov2640_handle_t *handle, o
  *            - 1 set frame length adjustment failed
  *            - 2 handle is NULL
  *            - 3 handle is not initialized
- *            - 4 frame > 0x3FF
  * @note      none
  */
 uint8_t ov2640_set_frame_length_adjustment(ov2640_handle_t *handle, uint16_t frame);
